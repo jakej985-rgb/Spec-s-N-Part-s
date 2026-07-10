@@ -10,14 +10,12 @@ Version 0.1
 
 ---
 
-# Core Principles
-
-[Core Principles](Vison/CorePrinciples.md)
+# Core Principles [Core Principles](Vison/CorePrinciples.md)
 
 
 ---
 
-# 3. Minimum Viable Product (MVP)
+# Minimum Viable Product (MVP) [MVP](Vison/MVP.md)
 
  * [ ] Add vehicle
 
