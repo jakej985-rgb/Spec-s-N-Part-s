@@ -1,5 +1,3 @@
----
-
 ## Purpose:
 - *Give the user a quick overview of their selected vehicle.*
 
