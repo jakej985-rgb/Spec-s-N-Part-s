@@ -16,30 +16,12 @@ https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/db9c9e2dc7da7e85dc773519ae3
 
 ---
 
-# Minimum Viable Product [MVP](Vison/MVP.md)
+# [Minimum Viable Product (MVP)](Vison/MVP.md)
 
- * [ ] Add vehicle
-
- * [ ] VIN decode
-
- * [ ] Manual vehicle entry
-
- * [ ] Garage
-
- * [ ] Vehicle details
-
- * [ ] Maintenance tracking
-
- * [ ] Fluid specifications
-
- * [ ] Settings
-
-
-> Everything else waits until after version 1.0.
-
+https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/a172639ad6fed7246e13677a55597c5234a12236/AppBible/Vison/MVP.md?plain=1#L3-L10
 
 ---
-# 4. Data Models
+# [Data Models](Classes/ReadMe.md)
 
 #### Vehicle Class
 
