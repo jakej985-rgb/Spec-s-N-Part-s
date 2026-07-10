@@ -12,6 +12,7 @@ Version 0.1
 
 # [Core Principles](Vison/CorePrinciples.md)
 
+https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/db9c9e2dc7da7e85dc773519ae36588e09c14a56/AppBible/Vison/CorePrinciples.md?plain=1#L3-L8
 
 ---
 
