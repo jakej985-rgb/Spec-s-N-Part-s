@@ -8,3 +8,22 @@
 ---
 
 ## Widgets:
+-
+
+---
+
+
+## Actions
+- 
+
+---
+
+## Uses Classes
+- 
+
+---
+
+## Future Ideas
+- 
+
+---
