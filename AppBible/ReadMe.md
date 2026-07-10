@@ -11,7 +11,7 @@ Version 0.1
 ---
 
 # Core Principles
-[View Here] (Vision/CorePrinciple.md)
+[View Here] (Vison/CorePrinciple.md)
 
 
 ---
