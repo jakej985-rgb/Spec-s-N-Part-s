@@ -1,6 +1,6 @@
 # AddVehicle Page
 
---
+---
 
 ## Purpose
 - *To add vehicles to garage will be 2 ways. First way is to scan/type VIN. Second way is though Year Make Model Trim dialog.*
