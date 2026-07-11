@@ -1,0 +1,23 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Main gear circle -->
+  <circle cx="12" cy="12" r="7" fill="none"/>
+  <!-- Gear teeth (8 points) -->
+  <path d="M 12 3 L 12 1 M 12 23 L 12 21"/>
+  <path d="M 21 12 L 23 12 M 3 12 L 1 12"/>
+  <path d="M 18.5 5.5 L 19.9 4.1 M 4.1 19.9 L 5.5 18.5"/>
+  <path d="M 18.5 18.5 L 19.9 19.9 M 4.1 4.1 L 5.5 5.5"/>
+  <!-- Inner gear (smaller, offset) -->
+  <circle cx="12" cy="12" r="4.5" fill="none" stroke-width="1.5"/>
+  <!-- Center hub -->
+  <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+  <!-- Transmission indicator (showing engaged) -->
+  <path d="M 8 8 L 10 10 M 14 14 L 16 16" stroke-width="1.2" opacity="0.6"/>
+</svg>

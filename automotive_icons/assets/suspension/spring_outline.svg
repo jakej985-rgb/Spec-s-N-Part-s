@@ -1,0 +1,19 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Spring coils -->
+  <path d="M 12 2 Q 8 3 8 6 Q 8 9 12 9 Q 16 9 16 12 Q 16 15 12 15 Q 8 15 8 18 Q 8 21 12 22" stroke-width="2.2"/>
+  <!-- Mounting eye top -->
+  <circle cx="12" cy="2" r="1.5" fill="none" stroke-width="1.5"/>
+  <!-- Mounting eye bottom -->
+  <circle cx="12" cy="22" r="1.5" fill="none" stroke-width="1.5"/>
+  <!-- Spring indicator marks (compression) -->
+  <line x1="6" y1="9" x2="6.5" y2="9" stroke-width="1" opacity="0.5"/>
+  <line x1="17.5" y1="15" x2="18" y2="15" stroke-width="1" opacity="0.5"/>
+</svg>

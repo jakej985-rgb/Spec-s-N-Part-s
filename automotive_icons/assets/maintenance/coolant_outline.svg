@@ -1,0 +1,25 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Coolant bottle body -->
+  <path d="M 7 5 L 7 3 Q 7 2 8 2 L 16 2 Q 17 2 17 3 L 17 5 Q 17 6 16 6 L 8 6 Q 7 6 7 5 Z"/>
+  <!-- Bottle neck -->
+  <line x1="10" y1="6" x2="10" y2="8"/>
+  <line x1="14" y1="6" x2="14" y2="8"/>
+  <!-- Main bottle body -->
+  <path d="M 6 8 L 6 18 Q 6 20 8 20 L 16 20 Q 18 20 18 18 L 18 8 Z"/>
+  <!-- Coolant level (wavy to show liquid) -->
+  <path d="M 7 14 Q 9 13 11 14 Q 13 15 15 14 Q 17 13 18 14" fill="currentColor" opacity="0.25"/>
+  <!-- Coolant fill -->
+  <path d="M 7 14 L 7 18 Q 7 19 8 19 L 16 19 Q 17 19 17 18 L 17 14" fill="currentColor" opacity="0.15"/>
+  <!-- Temperature indicator stripe -->
+  <line x1="5" y1="10" x2="5.5" y2="10" stroke-width="1.5" opacity="0.6"/>
+  <line x1="5" y1="14" x2="5.5" y2="14" stroke-width="1.5" opacity="0.6"/>
+  <line x1="5" y1="18" x2="5.5" y2="18" stroke-width="1.5" opacity="0.6"/>
+</svg>
