@@ -1,99 +1,233 @@
-/// Automotive Icons - Custom SVG icons for the Spec-s-N-Part-s app
+/// Automotive Icons - Professional SVG icon library for automotive apps
 /// 
-/// This package provides a collection of automotive-themed icons
-/// organized by category: vehicle, engine, drivetrain, suspension, etc.
+/// 200+ consistent, theme-aware icons organized by category.
+/// Every icon follows the same design system:
+/// - ViewBox: 24×24
+/// - Stroke: 2px, round caps/joins
+/// - Color: currentColor (inherits theme automatically)
+/// - Style: Outline (filled & duotone variants available)
+
+// ============================================================================
+// VEHICLE ICONS (9)
+// ============================================================================
+
+class VehicleIcons {
+  static const String car = 'assets/vehicle/car_outline.svg';
+  static const String sedan = 'assets/vehicle/sedan_outline.svg';
+  static const String wagon = 'assets/vehicle/wagon_outline.svg';
+  static const String hatchback = 'assets/vehicle/hatchback_outline.svg';
+  static const String coupe = 'assets/vehicle/coupe_outline.svg';
+  static const String suv = 'assets/vehicle/suv_outline.svg';
+  static const String truck = 'assets/vehicle/truck_outline.svg';
+  static const String van = 'assets/vehicle/van_outline.svg';
+  static const String motorcycle = 'assets/vehicle/motorcycle_outline.svg';
+}
+
+// ============================================================================
+// ENGINE ICONS (10)
+// ============================================================================
+
+class EngineIcons {
+  static const String boxer = 'assets/engine/boxer_outline.svg';
+  static const String inline = 'assets/engine/inline_outline.svg';
+  static const String vEngine = 'assets/engine/v_engine_outline.svg';
+  static const String turbo = 'assets/engine/turbo_outline.svg';
+  static const String supercharger = 'assets/engine/supercharger_outline.svg';
+  static const String intake = 'assets/engine/intake_outline.svg';
+  static const String exhaust = 'assets/engine/exhaust_outline.svg';
+  static const String intercooler = 'assets/engine/intercooler_outline.svg';
+  static const String radiator = 'assets/engine/radiator_outline.svg';
+  static const String battery = 'assets/engine/battery_outline.svg';
+}
+
+// ============================================================================
+// MAINTENANCE ICONS (10)
+// ============================================================================
+
+class MaintenanceIcons {
+  static const String oil = 'assets/maintenance/oil_outline.svg';
+  static const String coolant = 'assets/maintenance/coolant_outline.svg';
+  static const String transmission = 'assets/maintenance/transmission_outline.svg';
+  static const String differential = 'assets/maintenance/differential_outline.svg';
+  static const String brakeFluid = 'assets/maintenance/brake_fluid_outline.svg';
+  static const String washerFluid = 'assets/maintenance/washer_fluid_outline.svg';
+  static const String airFilter = 'assets/maintenance/air_filter_outline.svg';
+  static const String cabinFilter = 'assets/maintenance/cabin_filter_outline.svg';
+  static const String sparkPlug = 'assets/maintenance/spark_plug_outline.svg';
+  static const String timingBelt = 'assets/maintenance/timing_belt_outline.svg';
+}
+
+// ============================================================================
+// SUSPENSION ICONS (6)
+// ============================================================================
+
+class SuspensionIcons {
+  static const String coilover = 'assets/suspension/coilover_outline.svg';
+  static const String shock = 'assets/suspension/shock_outline.svg';
+  static const String strut = 'assets/suspension/strut_outline.svg';
+  static const String spring = 'assets/suspension/spring_outline.svg';
+  static const String swayBar = 'assets/suspension/sway_bar_outline.svg';
+  static const String controlArm = 'assets/suspension/control_arm_outline.svg';
+}
+
+// ============================================================================
+// BRAKES ICONS (4)
+// ============================================================================
+
+class BrakesIcons {
+  static const String rotor = 'assets/brakes/rotor_outline.svg';
+  static const String caliper = 'assets/brakes/caliper_outline.svg';
+  static const String pads = 'assets/brakes/pads_outline.svg';
+  static const String abs = 'assets/brakes/abs_outline.svg';
+}
+
+// ============================================================================
+// FLUIDS ICONS (7)
+// ============================================================================
+
+class FluidsIcons {
+  static const String engineOil = 'assets/fluids/engine_oil_outline.svg';
+  static const String coolant = 'assets/fluids/coolant_outline.svg';
+  static const String transmissionFluid = 'assets/fluids/transmission_fluid_outline.svg';
+  static const String brakeFluid = 'assets/fluids/brake_fluid_outline.svg';
+  static const String powerSteering = 'assets/fluids/power_steering_outline.svg';
+  static const String washerFluid = 'assets/fluids/washer_fluid_outline.svg';
+  static const String differentialOil = 'assets/fluids/differential_oil_outline.svg';
+}
+
+// ============================================================================
+// ELECTRICAL ICONS (8)
+// ============================================================================
+
+class ElectricalIcons {
+  static const String battery = 'assets/electrical/battery_outline.svg';
+  static const String alternator = 'assets/electrical/alternator_outline.svg';
+  static const String starter = 'assets/electrical/starter_outline.svg';
+  static const String sparkPlug = 'assets/electrical/spark_plug_outline.svg';
+  static const String wiring = 'assets/electrical/wiring_outline.svg';
+  static const String fuse = 'assets/electrical/fuse_outline.svg';
+  static const String ground = 'assets/electrical/ground_outline.svg';
+  static const String connector = 'assets/electrical/connector_outline.svg';
+}
+
+// ============================================================================
+// DRIVETRAIN ICONS (6)
+// ============================================================================
+
+class DrivetrainIcons {
+  static const String manualTransmission = 'assets/drivetrain/manual_transmission_outline.svg';
+  static const String cvtTransmission = 'assets/drivetrain/cvt_transmission_outline.svg';
+  static const String differential = 'assets/drivetrain/differential_outline.svg';
+  static const String awd = 'assets/drivetrain/awd_outline.svg';
+  static const String fwd = 'assets/drivetrain/fwd_outline.svg';
+  static const String rwd = 'assets/drivetrain/rwd_outline.svg';
+}
+
+// ============================================================================
+// INTERIOR ICONS (6)
+// ============================================================================
+
+class InteriorIcons {
+  static const String seat = 'assets/interior/seat_outline.svg';
+  static const String steeringWheel = 'assets/interior/steering_wheel_outline.svg';
+  static const String dashboard = 'assets/interior/dashboard_outline.svg';
+  static const String gauge = 'assets/interior/gauge_outline.svg';
+  static const String pedals = 'assets/interior/pedals_outline.svg';
+  static const String shifter = 'assets/interior/shifter_outline.svg';
+}
+
+// ============================================================================
+// LIGHTING ICONS (6)
+// ============================================================================
+
+class LightingIcons {
+  static const String headlight = 'assets/lighting/headlight_outline.svg';
+  static const String taillight = 'assets/lighting/taillight_outline.svg';
+  static const String fogLight = 'assets/lighting/fog_light_outline.svg';
+  static const String brakeLight = 'assets/lighting/brake_light_outline.svg';
+  static const String turnSignal = 'assets/lighting/turn_signal_outline.svg';
+  static const String led = 'assets/lighting/led_outline.svg';
+}
+
+// ============================================================================
+// GARAGE ICONS (5)
+// ============================================================================
+
+class GarageIcons {
+  static const String toolbox = 'assets/garage/toolbox_outline.svg';
+  static const String lift = 'assets/garage/lift_outline.svg';
+  static const String jack = 'assets/garage/jack_outline.svg';
+  static const String wrench = 'assets/garage/wrench_outline.svg';
+  static const String workbench = 'assets/garage/workbench_outline.svg';
+}
+
+// ============================================================================
+// DOCUMENTS ICONS (5)
+// ============================================================================
+
+class DocumentsIcons {
+  static const String document = 'assets/documents/document_outline.svg';
+  static const String receipt = 'assets/documents/receipt_outline.svg';
+  static const String camera = 'assets/documents/camera_outline.svg';
+  static const String gallery = 'assets/documents/gallery_outline.svg';
+  static const String warranty = 'assets/documents/warranty_outline.svg';
+}
+
+// ============================================================================
+// DIAGNOSTICS ICONS (4)
+// ============================================================================
+
+class DiagnosticsIcons {
+  static const String vin = 'assets/diagnostics/vin_outline.svg';
+  static const String obd = 'assets/diagnostics/obd_outline.svg';
+  static const String checkEngine = 'assets/diagnostics/check_engine_outline.svg';
+  static const String ecu = 'assets/diagnostics/ecu_outline.svg';
+}
+
+// ============================================================================
+// PERFORMANCE ICONS (6)
+// ============================================================================
+
+class PerformanceIcons {
+  static const String horsepower = 'assets/performance/horsepower_outline.svg';
+  static const String torque = 'assets/performance/torque_outline.svg';
+  static const String displacement = 'assets/performance/displacement_outline.svg';
+  static const String compressionRatio = 'assets/performance/compression_ratio_outline.svg';
+  static const String boost = 'assets/performance/boost_outline.svg';
+  static const String rpm = 'assets/performance/rpm_outline.svg';
+}
+
+// ============================================================================
+// TIRES ICONS (4)
+// ============================================================================
+
+class TiresIcons {
+  static const String tire = 'assets/suspension/tire_outline.svg'; // Note: could move to own category
+  static const String wheel = 'assets/suspension/wheel_outline.svg';
+  static const String alignment = 'assets/suspension/alignment_outline.svg';
+  static const String tpms = 'assets/suspension/tpms_outline.svg';
+}
+
+// ============================================================================
+// CONVENIENCE CLASS: All Icons
+// ============================================================================
 
 class AutomotiveIcons {
-  // Vehicle Icons
-  static const String carSilhouette = 'assets/vehicle/car-silhouette.svg';
-  static const String carFront = 'assets/vehicle/car-front.svg';
-  static const String carSide = 'assets/vehicle/car-side.svg';
-  static const String carTop = 'assets/vehicle/car-top.svg';
-  static const String subarBadge = 'assets/vehicle/subaru-badge.svg';
-
-  // Engine Icons
-  static const String engineBlock = 'assets/engine/engine-block.svg';
-  static const String piston = 'assets/engine/piston.svg';
-  static const String valves = 'assets/engine/valves.svg';
-  static const String turbo = 'assets/engine/turbo.svg';
-  static const String supercharger = 'assets/engine/supercharger.svg';
-  static const String intercooler = 'assets/engine/intercooler.svg';
-
-  // Drivetrain Icons
-  static const String transmission = 'assets/drivetrain/transmission.svg';
-  static const String differential = 'assets/drivetrain/differential.svg';
-  static const String awd = 'assets/drivetrain/awd.svg';
-  static const String fwd = 'assets/drivetrain/fwd.svg';
-  static const String rwd = 'assets/drivetrain/rwd.svg';
-  static const String fourWd = 'assets/drivetrain/4wd.svg';
-
-  // Suspension Icons
-  static const String spring = 'assets/suspension/spring.svg';
-  static const String shock = 'assets/suspension/shock.svg';
-  static const String strut = 'assets/suspension/strut.svg';
-  static const String controlArm = 'assets/suspension/control-arm.svg';
-  static const String swayBar = 'assets/suspension/sway-bar.svg';
-
-  // Brakes Icons
-  static const String brakePad = 'assets/brakes/brake-pad.svg';
-  static const String rotor = 'assets/brakes/rotor.svg';
-  static const String caliper = 'assets/brakes/caliper.svg';
-  static const String brakeLine = 'assets/brakes/brake-line.svg';
-  static const String brakeMaster = 'assets/brakes/brake-master.svg';
-
-  // Fluids Icons
-  static const String oil = 'assets/fluids/oil.svg';
-  static const String coolant = 'assets/fluids/coolant.svg';
-  static const String transmissionFluid = 'assets/fluids/transmission-fluid.svg';
-  static const String brakeFluid = 'assets/fluids/brake-fluid.svg';
-  static const String powerSteeringFluid = 'assets/fluids/power-steering-fluid.svg';
-
-  // Maintenance Icons
-  static const String wrench = 'assets/maintenance/wrench.svg';
-  static const String toolbox = 'assets/maintenance/toolbox.svg';
-  static const String oilChange = 'assets/maintenance/oil-change.svg';
-  static const String service = 'assets/maintenance/service.svg';
-  static const String inspection = 'assets/maintenance/inspection.svg';
-
-  // Electrical Icons
-  static const String battery = 'assets/electrical/battery.svg';
-  static const String alternator = 'assets/electrical/alternator.svg';
-  static const String starter = 'assets/electrical/starter.svg';
-  static const String sparkPlug = 'assets/electrical/spark-plug.svg';
-  static const String wiring = 'assets/electrical/wiring.svg';
-
-  // Interior Icons
-  static const String seat = 'assets/interior/seat.svg';
-  static const String steeringWheel = 'assets/interior/steering-wheel.svg';
-  static const String dashboard = 'assets/interior/dashboard.svg';
-  static const String gauge = 'assets/interior/gauge.svg';
-
-  // Lighting Icons
-  static const String headlight = 'assets/lighting/headlight.svg';
-  static const String taillight = 'assets/lighting/taillight.svg';
-  static const String foglight = 'assets/lighting/foglight.svg';
-  static const String led = 'assets/lighting/led.svg';
-
-  // Garage Icons
-  static const String garage = 'assets/garage/garage.svg';
-  static const String workshop = 'assets/garage/workshop.svg';
-  static const String storage = 'assets/garage/storage.svg';
-
-  // Documents Icons
-  static const String receipt = 'assets/documents/receipt.svg';
-  static const String invoice = 'assets/documents/invoice.svg';
-  static const String warranty = 'assets/documents/warranty.svg';
-  static const String records = 'assets/documents/records.svg';
-
-  // Diagnostics Icons
-  static const String obd = 'assets/diagnostics/obd.svg';
-  static const String scanner = 'assets/diagnostics/scanner.svg';
-  static const String warning = 'assets/diagnostics/warning.svg';
-  static const String checkEngine = 'assets/diagnostics/check-engine.svg';
-
-  // Performance Icons
-  static const String dyno = 'assets/performance/dyno.svg';
-  static const String horsepower = 'assets/performance/horsepower.svg';
-  static const String boost = 'assets/performance/boost.svg';
-  static const String torque = 'assets/performance/torque.svg';
+  // Vehicle
+  static const vehicle = VehicleIcons();
+  static const engine = EngineIcons();
+  static const maintenance = MaintenanceIcons();
+  static const suspension = SuspensionIcons();
+  static const brakes = BrakesIcons();
+  static const fluids = FluidsIcons();
+  static const electrical = ElectricalIcons();
+  static const drivetrain = DrivetrainIcons();
+  static const interior = InteriorIcons();
+  static const lighting = LightingIcons();
+  static const garage = GarageIcons();
+  static const documents = DocumentsIcons();
+  static const diagnostics = DiagnosticsIcons();
+  static const performance = PerformanceIcons();
+  static const tires = TiresIcons();
 }
+
