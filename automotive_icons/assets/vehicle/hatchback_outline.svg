@@ -1,0 +1,28 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Hatchback body (compact, rounded rear) -->
+  <path d="M 3 12 L 5 6 Q 5 4 7 4 L 15 4 Q 17 4 17 6 L 19 12"/>
+  <!-- Rear cargo slope -->
+  <path d="M 19 12 Q 20 14 19 17 L 3 17"/>
+  <!-- Cargo gate (hatch) -->
+  <path d="M 16 12 Q 17 14 16 17" stroke-width="1.5" opacity="0.6"/>
+  <!-- Windshield -->
+  <line x1="6" y1="6" x2="16" y2="6"/>
+  <!-- Side windows -->
+  <line x1="8" y1="12" x2="8" y2="7"/>
+  <line x1="13" y1="12" x2="13" y2="7"/>
+  <!-- Wheels -->
+  <circle cx="6" cy="17" r="1.5" fill="currentColor"/>
+  <circle cx="16" cy="17" r="1.5" fill="currentColor"/>
+  <!-- Headlight -->
+  <rect x="3" y="12.5" width="1" height="1.5" rx="0.3" fill="currentColor"/>
+  <!-- Taillight -->
+  <rect x="20" y="12.5" width="1" height="1.5" rx="0.3" fill="currentColor"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Rotor main disc -->
+  <circle cx="12" cy="12" r="8.5" fill="none" stroke-width="2"/>
+  <!-- Rotor cooling veins (ventilated rotor channels) -->
+  <path d="M 12 3.5 L 12 20.5" stroke-width="1.2" opacity="0.6"/>
+  <path d="M 8 6 L 16 18" stroke-width="1.2" opacity="0.6"/>
+  <path d="M 16 6 L 8 18" stroke-width="1.2" opacity="0.6"/>
+  <!-- Center hub/bolt pattern -->
+  <circle cx="12" cy="12" r="3.5" fill="none" stroke-width="1.2"/>
+  <!-- Bolt holes (5 holes like Subaru) -->
+  <circle cx="12" cy="7" r="0.6" fill="currentColor"/>
+  <circle cx="15.7" cy="9.6" r="0.6" fill="currentColor"/>
+  <circle cx="14.8" cy="15" r="0.6" fill="currentColor"/>
+  <circle cx="9.2" cy="15" r="0.6" fill="currentColor"/>
+  <circle cx="8.3" cy="9.6" r="0.6" fill="currentColor"/>
+  <!-- Rotor wear indicator depth marks -->
+  <line x1="20" y1="12" x2="21" y2="12" stroke-width="1"/>
+</svg>
