@@ -2,7 +2,7 @@
 
 ## Core
 
-- Vehicle
+- [Vehicle](Core/Vehicles.md)
 - FactorySpecs
 - CurrentSpecs
 
