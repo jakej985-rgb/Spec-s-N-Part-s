@@ -1,101 +1,112 @@
 # Minimum Viable Product (MVP)
 
+*Solo project with limited hours. Focus on core, drop nice-to-haves.*
+
 ---
 
 ## Scope
-Everything below is required for v1.0 release. Features not listed are post-launch.
+Everything below is required for v1.0. Nice-to-haves are post-launch or skipped entirely.
 
 ---
 
-## Core Features (v1.0)
+## Must-Have Features (v1.0)
 
 ### Vehicle Management
-- [x] Add vehicle (VIN scan or manual YMMT)
-- [x] VIN decode and factory spec lookup
-- [x] Manual vehicle entry (YMMT picker)
-- [x] View vehicle list (Garage screen)
-- [x] View vehicle details (engine, transmission, specs)
-- [x] Edit vehicle name and metadata
-- [x] Delete vehicle (with confirmation)
-- [x] Switch/select current vehicle
+- Add vehicle (VIN scan OR manual YMMT, start with one)
+- View vehicle list (Garage screen)
+- View vehicle details
+- Delete vehicle (with confirmation)
+- Switch/select current vehicle
 
 ### Maintenance Tracking
-- [x] Add maintenance record (date, type, mileage, cost, notes)
-- [x] Attach photos/receipts to maintenance
-- [x] View maintenance history (timeline, filterable)
-- [x] Edit/delete maintenance records
-- [x] Maintenance analytics (total cost, by type)
+- Add maintenance record (date, type, cost, notes)
+- View maintenance history (list)
+- Edit/delete records
+- Basic cost total display
 
-### Fluids & Specifications
-- [x] Display factory fluid specs (oil, coolant, transmission, brake)
-- [x] Link fluid specs to Part recommendations
-- [x] Show recommended change intervals
+### Fluids & Specs
+- Display factory fluid specs
+- Show change intervals
 
 ### Home Screen
-- [x] Quick overview of selected vehicle
-- [x] Upcoming maintenance reminders widget
-- [x] Quick actions (add maintenance, log fill-up)
+- Quick overview of selected vehicle
+- Link to add maintenance
 
 ### Settings
-- [x] Theme (light/dark)
-- [x] Units (metric/imperial)
-- [x] About & Help
+- Theme toggle (light/dark)
+- Units (metric/imperial)
+- About
 
-### Data & Sync
-- [x] Local SQLite database
-- [x] Basic cloud sync (unauthenticated, local-first)
-- [x] Offline functionality (all features work without network)
+### Data
+- Local SQLite database
+- Offline-first (all features work without network)
 
 ---
 
-## Out of Scope (Post-v1.0)
+## Nice-to-Have (Add If Time)
 
-### Advanced Features
-- [ ] Parts catalog & shopping
-- [ ] Modifications tracking
-- [ ] Advanced reminders (recurring, SMS/push)
-- [ ] Expense analytics dashboard
-- [ ] PDF export
-- [ ] Photo gallery per vehicle
-- [ ] Social sharing
-- [ ] Multi-user/family accounts
-- [ ] Calendar-based maintenance planning
-- [ ] OBD integration (live data)
-- [ ] Trip logging & fuel economy
+- [ ] VIN barcode scanning (can start with manual VIN paste)
+- [ ] Recurring maintenance reminders
+- [ ] Attachments (photos/receipts)
+- [ ] Expense analytics
+- [ ] Parts quick-links
+- [ ] Trip logging
 
-### Platform/Technical
-- [ ] Web app (desktop version)
-- [ ] iPad/tablet optimization
-- [ ] Apple Watch app
-- [ ] Custom themes/colors
-- [ ] Accessibility enhancements (beyond WCAG AA)
-- [ ] Offline map for service locations
+---
+
+## Explicitly Out of Scope (v1.0)
+
+- Cloud sync / multi-device
+- User accounts / login
+- Social features
+- Community mods
+- Modifications tracking
+- Advanced reminders
+- API integrations
+- Web app
+- Fancy animations
+- Full accessibility compliance (do basic best-effort)
 
 ---
 
 ## Success Criteria for MVP
 
-1. **Core Functionality**: All checked items above work without crashes.
-2. **Offline**: App functions fully without network.
-3. **Performance**: App launches in < 2 seconds, no UI freezes.
-4. **Data Integrity**: No data loss on app close, clear, or reinstall.
-5. **Usability**: New users can add a vehicle and log maintenance in < 2 minutes.
+1. **Core works**: Add vehicle, log maintenance, view history—no crashes.
+2. **Offline**: Works without network.
+3. **Usable**: New user can add a vehicle and log maintenance in < 3 minutes.
+4. **Stable**: Can use daily for personal vehicle tracking for 1 week without issues.
 
 ---
 
-## Timeline
-- Alpha: internal testing, core feature validation
-- Beta: external user feedback, bug fixes
-- v1.0: production release to app stores
+## Development Strategy
+
+- **Phase 1**: Vehicle model + Garage screen (2-3 weeks)
+- **Phase 2**: Maintenance tracking (2-3 weeks)
+- **Phase 3**: Fluids display + specs lookup (1-2 weeks)
+- **Phase 4**: Settings + polish (1 week)
+- **Phase 5**: Testing & bug fixes (1-2 weeks)
+
+Total estimate: 8-12 weeks @ 5-10 hrs/week = ready by mid-2025.
 
 ---
 
-## Post-v1.0 Roadmap (Prioritized)
-1. Push notifications & reminders (high value, low risk)
-2. Parts catalog (address user request for parts links)
-3. Advanced analytics (expense tracking, trends)
-4. Modifications tracking (enthusiast user base)
-5. Multi-device sync with cloud account (premium feature?)
+## Post-v1.0 (If Still Interested)
+
+Pick 1-2 of these for v1.1 or v1.5:
+- Barcode VIN scanning
+- Simple reminders
+- Modifications tracking
+- Trip logging
+
+Everything else waits or gets skipped.
 
 ---
+
+## Sustainability
+- Don't perfectionize; ship with 80%.
+- Iterate on user feedback if you get any.
+- If you stop enjoying it, that's fine—it's a solo hobby project.
+
+---
+
 
