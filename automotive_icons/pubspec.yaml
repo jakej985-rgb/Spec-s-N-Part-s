@@ -1,0 +1,34 @@
+name: automotive_icons
+description: Professional SVG icon library for automotive applications. 200+ consistent, theme-aware icons for Subaru Specs & Garage and other automotive projects.
+version: 0.1.0
+homepage: https://github.com/jakej985-rgb/Spec-s-N-Part-s/tree/main/automotive_icons
+repository: https://github.com/jakej985-rgb/Spec-s-N-Part-s
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# Icon asset declarations
+flutter:
+  assets:
+    - assets/vehicle/
+    - assets/engine/
+    - assets/maintenance/
+    - assets/suspension/
+    - assets/brakes/
+    - assets/fluids/
+    - assets/electrical/
+    - assets/drivetrain/
+    - assets/interior/
+    - assets/lighting/
+    - assets/garage/
+    - assets/documents/
+    - assets/diagnostics/
+    - assets/performance/
+
+# Future: make this a standalone package with flutter_svg dependency
+# dependencies:
+#   flutter_svg: ^1.1.0

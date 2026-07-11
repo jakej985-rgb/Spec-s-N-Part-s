@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  TEMPLATE: Automotive Icon
+  
+  Design Guidelines:
+  - ViewBox: 24x24 (always)
+  - Stroke: 2px (round caps and joins)
+  - Color: currentColor (theme-aware)
+  - Safe Area: 20x20 (2px margin)
+  - Corners: Rounded (2-3px, not sharp)
+  - Perspective: Flat (no 3D)
+  
+  This is an EXAMPLE. Use as template for new icons.
+  Replace stroke="currentColor" with actual path data.
+-->
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  fill="none"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Example: Simple car outline -->
+  <rect x="3" y="9" width="18" height="9" rx="2" stroke="currentColor"/>
+  <circle cx="6" cy="18" r="1.5" fill="currentColor"/>
+  <circle cx="18" cy="18" r="1.5" fill="currentColor"/>
+  <path d="M6 9 L8 5 Q8 3 10 3 L14 3 Q16 3 16 5 L18 9" stroke="currentColor"/>
+  <line x1="8" y1="9" x2="8" y2="6" stroke="currentColor"/>
+  <line x1="16" y1="9" x2="16" y2="6" stroke="currentColor"/>
+</svg>
