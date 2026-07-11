@@ -32,7 +32,7 @@
 # [Screen List](/AppBible/Screens)
 ---
 ### [Home:](Screens/Home.md)
-- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Home.md
+https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Home.md
 ---
 ### [Garage:](Screens/Garage.md)
 - https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Garage.md
