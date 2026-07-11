@@ -27,7 +27,8 @@
 ---
 
 ## Relationships
-
+- 
+---
 ### Uses
 
 * FactorySpecs
@@ -37,7 +38,7 @@
 * Reminders
 * Photos
 * Documents
-
+---
 ### Used By
 
 * Garage Screen
