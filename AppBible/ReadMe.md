@@ -29,92 +29,31 @@
 - https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/295effc881a1dfc6766f73936b09d9e28610d862/AppBible/Classes/Maintenance/MaintenanceRecord.md?plain=1#L1-L8
 ---
 
-# 5. Screen List
-
+# [Screen List](/AppBible/Screens)
 ---
-
-### 5.1 Home
-
-#### Purpose:
- * *Give the user a quick overview of their selected vehicle.*
-
-#### Widgets:
-
- * Change vehicle 
- * Current vehicle
- * Mileage
- * Upcoming maintenance
- * Quick actions
-
+### [Home:](Screens/Home.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Home.md
 ---
-
-### 5.2 Garage:
-
-#### Purpose:
- * *This page is for you to view cars in garage. Also able to view and edit records and engine/drivetrain if you have modified it.*
-
-#### Widgets:
-
- * list all cars
- * view/edit cars motor/trans
- * view/edit records
-
+### [Garage:](Screens/Garage.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Garage.md
 ---
-
-### 5.3 Add Vehicle
-
-#### Purpose:
- * *This is to add a new vehicle to the garage.Will have 2 ways to add Scan/Type VIN or Year Make Model Trim.Should try to decode VIN to get drivetrain info.*
-
-#### Widgets:
-
- * VIN decoder
- * Year Make model Trim dialog 
- * camera access for vin scanner 
-
+### [Add Vehicle:](Screens/AddVehicle.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/AddVehicle.md
 ---
-
-### 5.4 Vehicle Details
-
-#### Purpose:
- * *this will list drivetrain specs. like fwd or awd engine trans diffs etc.*
-
-#### Widgets:
-
+### [Vehicle Details](Screens/VehicleDetails.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/AddVehicle.md
 ---
-
-### 5.5 Maintenance
-
-#### Purpose:
-
-#### Widgets:
-
+### [Maintenance](Screens/Maintenance.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Maintenance.md
 ---
-
-### 5.6 Fluids
-
-#### Purpose:
-
-#### Widgets:
-
+### [Settings](Screens/Settings.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Settings.md
 ---
-
-### 5.7 Parts
-
-#### Purpose:
-
-#### Widgets:
-
+### [Parts](Screens/Parts.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Parts.md
 ---
-
-### 5.8 Settings
-
-#### Purpose:
-
-#### Widgets:
-
----
-
+### [Fluids](Screens/Fluids.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/527277564cd6e9e8f6ef74692c8510dd7bf34a12/AppBible/Screens/Fluids.md
 ---
 
 # 6. Features
