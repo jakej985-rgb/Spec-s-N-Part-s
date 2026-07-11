@@ -3,37 +3,43 @@
 ---
 
 ## Purpose
-- *This page is for you to view cars in garage. Also able to view and edit records and engine/drivetrain if you have modified it.*
+- Primary hub listing the user's vehicles with quick actions to view, edit, and manage vehicle data.
 
 ---
 
-## Widgets:
-- list all cars
-- view/edit cars motor/trans
-- view/edit records
+## Widgets
+- Vehicle list with card rows (image, name, year, quick stats)
+- Search and filter bar (by make, model, year)
+- Sort menu (recent, name, mileage)
+- Quick action buttons (Add vehicle, Scan VIN, Import)
+- Empty state with onboarding CTA
 
 ---
 
-## Uses
-
-- Vehicle
-- FactorySpecs
-- CurrentSpecs
-
----
-
-## Features
-
-- View vehicles
-- Search
-- Sort
-- Edit vehicle
-- Delete vehicle
+## Actions
+- Open vehicle details.
+- Add / remove / edit vehicles.
+- Reorder or pin favorite vehicles.
+- Bulk actions (export, delete) for multi-select.
 
 ---
 
-## Future
+## Uses Classes
+- Vehicles (list, search, persistence)
+- Navigation (to details, add flows)
+- Analytics (list interactions)
 
-- Component View
-- Grid View
-- List View
+---
+
+## Acceptance Criteria
+- Vehicles list loads and paginates for large collections.
+- Search and filters return expected results.
+- Add/Edit flows navigate correctly and persist changes.
+
+---
+
+## Future Ideas
+- Grid and component view toggles.
+- Smart suggestions (recent services, reminders) on each card.
+
+---

@@ -24,8 +24,8 @@
 - Launch scanner and capture VIN via barcode or OCR.
 - Normalize scanned/pasted VIN (strip whitespace, upper-case, disallow I/O characters).
 - Perform local VIN checksum validation; surface correction hints for common mistakes.
-- Call VIN lookup API (send normalized VIN only) and populate preview card.
-- Open YMMT dialog for manual entry and fetch trims for selected model.
+- Call VIN lookup API (send normalized VIN and optional device locale) and populate preview card.
+- Open YMMT dialog for manual entry; fetch available trims via API when user selects year/make/model.
 - Save confirmed vehicle to Vehicles store and run duplicate detection.
 - Analytics events: scan_attempt, scan_success, lookup_success, save_success, save_failure.
 
@@ -47,7 +47,7 @@
 - VINParser: normalization, character rules, checksum validation.
 - CameraService / ScannerService: camera control, torch, frame capture, on-device OCR.
 - PermissionService: request and check camera permissions.
-- ApiClient: VIN lookup and trim lookup by YMMT.
+- ApiClient: VIN lookup and YMMT-based trim lookup.
 - FormValidator: input validation helpers.
 - Navigation: route after save (back to garage or details page).
 
@@ -61,6 +61,27 @@
 - imageUrl: string (optional)
 - source: enum {vin_lookup, user_manual}
 - addedAt: ISO8601 timestamp
+
+---
+
+## Permissions & Privacy
+
+### Data Transmission by Flow
+
+**VIN Lookup Flow:**
+- Sends to API: normalized VIN (17-char string, uppercase, no I/O characters) and optional device locale.
+- VIN is hashed server-side; it is **not stored** with the user account or used for tracking.
+- Response includes decoded make, model, year, trim, and optional image URL.
+
+**YMMT Trim Lookup Flow:**
+- When user selects year, make, model in the YMMT picker dialog, sends year, make, model, and optionally selected trim to the API to fetch available matching trims.
+- These fields are used purely for catalog lookup and are **not persisted** with user data.
+- Response is a list of trim options for confirmation; only the final confirmed trim is saved locally.
+- Rationale: Vehicle databases are large and constantly updated; local caching is impractical. This lookup is necessary to ensure users select valid trim options.
+
+### User Transparency
+- A help tooltip on the VIN input explains: "Your VIN is normalized locally, sent securely to our lookup service for decoding, and never stored with your account."
+- YMMT selection occurs entirely locally until confirmation; users can change year/make/model without triggers.
 
 ---
 
