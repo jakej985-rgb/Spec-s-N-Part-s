@@ -1,0 +1,23 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Main car body -->
+  <rect x="3" y="10" width="18" height="8" rx="2" ry="2"/>
+  <!-- Windows/cabin area -->
+  <path d="M 7 10 L 8 6 Q 8 4 10 4 L 14 4 Q 16 4 16 6 L 17 10"/>
+  <!-- Front windshield -->
+  <line x1="8" y1="6" x2="16" y2="6"/>
+  <!-- Wheels -->
+  <circle cx="6" cy="18" r="1.5" fill="currentColor"/>
+  <circle cx="18" cy="18" r="1.5" fill="currentColor"/>
+  <!-- Headlight -->
+  <rect x="3" y="11" width="1.5" height="2" rx="0.5" fill="currentColor"/>
+  <!-- Taillight -->
+  <rect x="19.5" y="11" width="1.5" height="2" rx="0.5" fill="currentColor"/>
+</svg>

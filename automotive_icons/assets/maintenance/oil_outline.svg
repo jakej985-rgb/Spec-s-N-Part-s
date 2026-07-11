@@ -1,0 +1,25 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Oil can body (rectangular can) -->
+  <rect x="6" y="6" width="10" height="12" rx="1" ry="1"/>
+  <!-- Oil level inside (filled area) -->
+  <rect x="7" y="12" width="8" height="5" fill="currentColor" opacity="0.2"/>
+  <!-- Spout (top left angled) -->
+  <path d="M 7 7 Q 3 6 2 8 Q 2 9 3 9 L 6 7"/>
+  <!-- Spout opening -->
+  <circle cx="2.5" cy="8.5" r="0.5" fill="currentColor"/>
+  <!-- Cap/lid (top of can) -->
+  <ellipse cx="11" cy="6" rx="5.5" ry="1.5"/>
+  <!-- Cap top ring -->
+  <path d="M 5.5 6 Q 5.5 4 11 4 Q 16.5 4 16.5 6"/>
+  <!-- Oil gauge/measurement marks on side -->
+  <line x1="5.5" y1="9" x2="6.5" y2="9" stroke-width="1.2"/>
+  <line x1="5.5" y1="12" x2="6.5" y2="12" stroke-width="1.2"/>
+</svg>
