@@ -8,7 +8,7 @@
 
 ## Maintenance
 
-- MaintenanceRecord
+- [MaintenanceRecord](Maintenance/MaintenanceRecord.md)
 - Reminder
 - FuelLog
 
