@@ -1,0 +1,29 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- SUV body (taller, more aggressive) -->
+  <rect x="3" y="9" width="18" height="9" rx="2" ry="2"/>
+  <!-- Raised cabin/roofline -->
+  <path d="M 7 9 L 9 4 Q 9 3 11 3 L 13 3 Q 15 3 15 4 L 17 9"/>
+  <!-- Windshield line -->
+  <line x1="9" y1="4" x2="15" y2="4"/>
+  <!-- Side windows -->
+  <line x1="11" y1="9" x2="11" y2="5"/>
+  <line x1="13" y1="9" x2="13" y2="5"/>
+  <!-- Wheels (larger for SUV) -->
+  <circle cx="6" cy="18" r="2" fill="none" stroke="currentColor"/>
+  <circle cx="18" cy="18" r="2" fill="none" stroke="currentColor"/>
+  <!-- Wheel hubs -->
+  <circle cx="6" cy="18" r="0.8" fill="currentColor"/>
+  <circle cx="18" cy="18" r="0.8" fill="currentColor"/>
+  <!-- Headlight -->
+  <rect x="3" y="10" width="1.5" height="2.5" rx="0.5" fill="currentColor"/>
+  <!-- Taillight -->
+  <rect x="19.5" y="10" width="1.5" height="2.5" rx="0.5" fill="currentColor"/>
+</svg>

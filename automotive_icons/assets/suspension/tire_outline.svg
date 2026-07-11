@@ -1,0 +1,28 @@
+<svg 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Outer tire rim (main circle) -->
+  <circle cx="12" cy="12" r="9"/>
+  <!-- Tire sidewall thickness -->
+  <circle cx="12" cy="12" r="7.5" fill="none" stroke-width="1.5"/>
+  <!-- Inner rim/wheel -->
+  <circle cx="12" cy="12" r="5.5" fill="none" stroke-width="1"/>
+  <!-- Center hub -->
+  <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+  <!-- Tire tread pattern (4 sections) -->
+  <path d="M 12 3.2 L 12 4.5" stroke-width="1.2"/>
+  <path d="M 19.2 12 L 18 12" stroke-width="1.2"/>
+  <path d="M 12 20.8 L 12 19.5" stroke-width="1.2"/>
+  <path d="M 4.8 12 L 6 12" stroke-width="1.2"/>
+  <!-- Diagonal tread marks -->
+  <path d="M 16.5 7.5 L 17.5 6.5" stroke-width="1"/>
+  <path d="M 16.5 16.5 L 17.5 17.5" stroke-width="1"/>
+  <path d="M 7.5 16.5 L 6.5 17.5" stroke-width="1"/>
+  <path d="M 7.5 7.5 L 6.5 6.5" stroke-width="1"/>
+</svg>
