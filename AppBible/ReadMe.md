@@ -12,46 +12,22 @@ Version 0.1
 
 # [Core Principles](Vison/CorePrinciples.md)
 
-https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/db9c9e2dc7da7e85dc773519ae36588e09c14a56/AppBible/Vison/CorePrinciples.md?plain=1#L3-L8
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/db9c9e2dc7da7e85dc773519ae36588e09c14a56/AppBible/Vison/CorePrinciples.md?plain=1#L3-L8
 
 ---
 
 # [Minimum Viable Product (MVP)](Vison/MVP.md)
 
-https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/a172639ad6fed7246e13677a55597c5234a12236/AppBible/Vison/MVP.md?plain=1#L3-L10
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/a172639ad6fed7246e13677a55597c5234a12236/AppBible/Vison/MVP.md?plain=1#L3-L10
 
 ---
 # [Data Models](Classes/ReadMe.md)
 
 #### Vehicle Class
-
-```text
-Vehicle
-├── VIN
-├── Nickname
-├── Year
-├── Make
-├── Model
-├── Trim
-├── Factory Specs
-├── Current Specs
-├── Maintenance
-├── Photos
-└── Documents
-```
-
-#### Maintenance Class
-
-```text
-Maintenance Record
-├── Date
-├── Mileage
-├── Category
-├── Notes
-├── Cost
-├── Photos
-└── Receipts
-```
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/ed04bdef1a0321b83b48d94955bcfe50c1f76bfe/AppBible/Classes/Core/Vehicles.md?plain=1#L11-L25
+---
+#### [Maintenance Class](Maintenance/MaintenanceRecords.md)
+- https://github.com/jakej985-rgb/Spec-s-N-Part-s/blob/295effc881a1dfc6766f73936b09d9e28610d862/AppBible/Classes/Maintenance/MaintenanceRecord.md?plain=1#L1-L8
 ---
 
 # 5. Screen List
