@@ -53,6 +53,38 @@
 
 ---
 
+### RoadMap
+```text
+Version 0.1
+
+Vehicle
+├── VIN
+├── Nickname
+├── Year
+├── Make
+├── Model
+└── Trim
+
+Version 0.2
+
+Vehicle
+├── CurrentSpecs
+└── FactorySpecs
+
+Version 0.3
+
+Vehicle
+├── Photos
+└── Documents
+
+Version 0.4
+
+Vehicle
+├── FuelLogs
+└── Maintenance
+```
+---
+
 ### ChangeLog
 
 ##### v0.1
