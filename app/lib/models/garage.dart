@@ -1,6 +1,6 @@
 import vehicle.dart
 
 class Garage {
-  list <Vehicle>;
+  List <Vehicle>;
   Vehicle selectedVehicle;
 }
