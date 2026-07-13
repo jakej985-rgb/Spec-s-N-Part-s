@@ -57,6 +57,7 @@
 
 ##### v0.1
 
+```text
 class Vehicle {
   string vin;
   string nickname;
@@ -65,3 +66,4 @@ class Vehicle {
   string model;
   string trim;
 }
+```
