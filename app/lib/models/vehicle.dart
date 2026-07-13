@@ -1,8 +1,8 @@
 class Vehicle {
-  string vin;
-  string nickname;
+  String vin;
+  String nickname;
   int year;
-  string make;
-  string model;
-  string trim;
+  String make;
+  String model;
+  String trim;
 }
