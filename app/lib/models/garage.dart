@@ -1,4 +1,4 @@
-import vehicle.dart
+import 'vehicle.dart';
 
 class Garage {
   List<Vehicle> vehicles;
