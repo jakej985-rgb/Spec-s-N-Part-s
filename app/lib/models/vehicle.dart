@@ -3,6 +3,6 @@ class Vehicle {
   string nickname;
   int year;
   string make;
-  string model:
+  string model;
   string trim;
 }
