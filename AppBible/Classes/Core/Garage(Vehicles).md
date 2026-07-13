@@ -9,6 +9,8 @@
 - Make
 - Model
 - Trim
+- Owner (think might belong to vehicles to also not sure if need not doing multi user yet)
+- Vehicle id (maybe)
 ---
 ## Relationships
 
