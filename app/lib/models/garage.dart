@@ -1,4 +1,4 @@
 class Garage {
-  String vehicles;
-  String selectedVehicle;
+  list <vehicle>;
+  vehicle selectedVehicle;
 }
