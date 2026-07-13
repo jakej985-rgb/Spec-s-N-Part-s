@@ -8,6 +8,12 @@
 - Selected Vehicle
 - Date Created
 ---
+## Responsibilities
+
+- Add a vehicle
+- Remove a vehicle
+- Select a vehicle
+---
 ## Relationships
 
 - Vehicle
