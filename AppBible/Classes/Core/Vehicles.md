@@ -49,7 +49,7 @@
 
 ### Status
 
-[x] Designing
+[x] V0.1
 
 ---
 
