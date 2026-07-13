@@ -52,3 +52,16 @@
 [x] Designing
 
 ---
+
+### ChangeLog
+
+##### v0.1
+
+class Vehicle {
+  string vin;
+  string nickname;
+  int year;
+  string make;
+  string model;
+  string trim;
+}
