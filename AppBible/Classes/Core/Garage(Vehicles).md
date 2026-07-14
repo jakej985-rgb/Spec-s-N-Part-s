@@ -40,9 +40,14 @@ Garage
 └── Garage
 ```
 ## ChangeLog
+#### v0.1
 ```text
- v.01
+import 'vehicle.dart';
 
+class Garage {
+  List<Vehicle> vehicles;
+  Vehicle selectedVehicle;
+}
 ```
 ## Open Questions
 
