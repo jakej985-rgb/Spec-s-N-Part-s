@@ -1,6 +1,8 @@
 # Offline First
 Status: :green_circle: Accepted
+
 Date: 2026-07-14
+
 Version: 0.1
 ---
 ## Decision
