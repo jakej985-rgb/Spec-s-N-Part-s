@@ -1,4 +1,7 @@
 # Factory Vs Current Specs
+- Status: :green_circle: Accepted
+- Date: 2026-07-14
+- Version: 0.1
 ---
 ## Decision
 - Factory specs are stored separately from current specs. 
@@ -13,5 +16,3 @@
 - Preserves VIN accuracy.
 - Allows the app to compare factory and current configurations.
 ---
-## Status
-- Accepted

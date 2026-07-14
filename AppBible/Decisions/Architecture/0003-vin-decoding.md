@@ -1,4 +1,7 @@
-# VIN Decoding
+# VIN 
+- Status: :green_circle: Accepted
+- Date: 2026-07-14
+- Version: 0.1
 ---
 ## Decision
 - VINs decoding is the prefered method to create vehicles.

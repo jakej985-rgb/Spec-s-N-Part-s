@@ -1,4 +1,7 @@
 # Offline First
+Status: :green_circle: Accepted
+Date: 2026-07-14
+Version: 0.1
 ---
 ## Decision
 *The app is designed to work fully offline. Cloud sync is optional and will be added in a future version.*
@@ -9,5 +12,3 @@
 - The user owns their data.
 - The app should remain fast and responsive.
 ---
-## Status
--Accepted

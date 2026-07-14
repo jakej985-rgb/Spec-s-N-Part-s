@@ -1,5 +1,7 @@
 # Factory Data Locking
-
+- Status: :green_circle: Accepted
+- Date: 2026-07-14
+- Version: 0.1
 ## Decision
 
 Factory vehicle information may be reviewed and corrected during the Add Vehicle workflow.
