@@ -50,9 +50,24 @@
 
 ### Status
 
-[x] V0.1
+:green_circle: V0.1
 
 ---
+## Validation Rules
+
+A Vehicle must have enough information to be uniquely identified.
+
+Minimum required:
+
+- Year
+- Make
+- Model
+
+Optional:
+
+- VIN
+- Trim
+- Nickname
 
 ### RoadMap
 ```text
