@@ -1,0 +1,52 @@
+# ADR-0006 - Named Constructor Parameters
+
+Category: Flutter
+Status: 🟢 Accepted
+Version: 0.1
+Date: 2026-07-14
+
+---
+
+## Decision
+
+Use named parameters for constructors throughout the project.
+
+---
+
+## Reason
+
+- Improves readability.
+- Prevents parameter order mistakes.
+- Makes object creation self-documenting.
+- Easier to maintain as models grow.
+
+---
+
+## Alternatives Considered
+
+- Positional parameters.
+
+---
+
+## Consequences
+
+Positive
+
+- Clearer code.
+- Easier maintenance.
+- Safer when multiple parameters share the same type.
+
+Negative
+
+- Slightly more typing.
+
+---
+
+## Related
+
+Classes
+
+- Vehicle
+- Garage
+- MaintenanceRecord
+- FactorySpecs
