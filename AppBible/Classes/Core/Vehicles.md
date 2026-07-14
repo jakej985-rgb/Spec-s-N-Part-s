@@ -23,6 +23,7 @@
 * Reminders (optional)
 * Photos (optional)
 * Documents (optional)
+* Mileage (optional)
 
 ---
 
