@@ -10,19 +10,19 @@
 
 ## Properties
 
-* VIN
-* Nickname
-* Year
+* VIN (optional)
+* Nickname (optional)
+* Year 
 * Make
 * Model
-* Trim
+* Trim (optional)
 * FactorySpecs
-* CurrentSpecs
-* MaintenanceRecords
-* FuelLogs
-* Reminders
-* Photos
-* Documents
+* CurrentSpecs (optional)
+* MaintenanceRecords (optional)
+* FuelLogs (optional)
+* Reminders (optional)
+* Photos (optional)
+* Documents (optional)
 
 ---
 
