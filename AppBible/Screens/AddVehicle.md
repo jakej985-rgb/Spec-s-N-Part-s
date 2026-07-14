@@ -92,3 +92,16 @@
 - Smart duplicate merge UX (suggested field merges and photo comparison).
 
 ---
+## Validation
+
+A vehicle cannot be saved until:
+
+- Year is selected
+- Make is selected
+- Model is selected
+
+Optional:
+
+- VIN
+- Trim
+- Nickname
