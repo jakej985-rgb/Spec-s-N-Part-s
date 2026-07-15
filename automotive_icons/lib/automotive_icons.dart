@@ -12,6 +12,7 @@
 // ============================================================================
 
 class VehicleIcons {
+  const VehicleIcons();
   static const String car = 'assets/vehicle/car_outline.svg';
   static const String sedan = 'assets/vehicle/sedan_outline.svg';
   static const String wagon = 'assets/vehicle/wagon_outline.svg';
@@ -28,6 +29,7 @@ class VehicleIcons {
 // ============================================================================
 
 class EngineIcons {
+  const EngineIcons();
   static const String boxer = 'assets/engine/boxer_outline.svg';
   static const String inline = 'assets/engine/inline_outline.svg';
   static const String vEngine = 'assets/engine/v_engine_outline.svg';
@@ -45,6 +47,7 @@ class EngineIcons {
 // ============================================================================
 
 class MaintenanceIcons {
+  const MaintenanceIcons();
   static const String oil = 'assets/maintenance/oil_outline.svg';
   static const String coolant = 'assets/maintenance/coolant_outline.svg';
   static const String transmission = 'assets/maintenance/transmission_outline.svg';
@@ -62,6 +65,7 @@ class MaintenanceIcons {
 // ============================================================================
 
 class SuspensionIcons {
+  const SuspensionIcons();
   static const String coilover = 'assets/suspension/coilover_outline.svg';
   static const String shock = 'assets/suspension/shock_outline.svg';
   static const String strut = 'assets/suspension/strut_outline.svg';
@@ -75,6 +79,7 @@ class SuspensionIcons {
 // ============================================================================
 
 class BrakesIcons {
+  const BrakesIcons();
   static const String rotor = 'assets/brakes/rotor_outline.svg';
   static const String caliper = 'assets/brakes/caliper_outline.svg';
   static const String pads = 'assets/brakes/pads_outline.svg';
@@ -86,6 +91,7 @@ class BrakesIcons {
 // ============================================================================
 
 class FluidsIcons {
+  const FluidsIcons();
   static const String engineOil = 'assets/fluids/engine_oil_outline.svg';
   static const String coolant = 'assets/fluids/coolant_outline.svg';
   static const String transmissionFluid = 'assets/fluids/transmission_fluid_outline.svg';
@@ -100,6 +106,7 @@ class FluidsIcons {
 // ============================================================================
 
 class ElectricalIcons {
+  const ElectricalIcons();
   static const String battery = 'assets/electrical/battery_outline.svg';
   static const String alternator = 'assets/electrical/alternator_outline.svg';
   static const String starter = 'assets/electrical/starter_outline.svg';
@@ -115,6 +122,7 @@ class ElectricalIcons {
 // ============================================================================
 
 class DrivetrainIcons {
+  const DrivetrainIcons();
   static const String manualTransmission = 'assets/drivetrain/manual_transmission_outline.svg';
   static const String cvtTransmission = 'assets/drivetrain/cvt_transmission_outline.svg';
   static const String differential = 'assets/drivetrain/differential_outline.svg';
@@ -128,6 +136,7 @@ class DrivetrainIcons {
 // ============================================================================
 
 class InteriorIcons {
+  const InteriorIcons();
   static const String seat = 'assets/interior/seat_outline.svg';
   static const String steeringWheel = 'assets/interior/steering_wheel_outline.svg';
   static const String dashboard = 'assets/interior/dashboard_outline.svg';
@@ -141,6 +150,7 @@ class InteriorIcons {
 // ============================================================================
 
 class LightingIcons {
+  const LightingIcons();
   static const String headlight = 'assets/lighting/headlight_outline.svg';
   static const String taillight = 'assets/lighting/taillight_outline.svg';
   static const String fogLight = 'assets/lighting/fog_light_outline.svg';
@@ -154,6 +164,7 @@ class LightingIcons {
 // ============================================================================
 
 class GarageIcons {
+  const GarageIcons();
   static const String toolbox = 'assets/garage/toolbox_outline.svg';
   static const String lift = 'assets/garage/lift_outline.svg';
   static const String jack = 'assets/garage/jack_outline.svg';
@@ -166,6 +177,7 @@ class GarageIcons {
 // ============================================================================
 
 class DocumentsIcons {
+  const DocumentsIcons();
   static const String document = 'assets/documents/document_outline.svg';
   static const String receipt = 'assets/documents/receipt_outline.svg';
   static const String camera = 'assets/documents/camera_outline.svg';
@@ -178,6 +190,7 @@ class DocumentsIcons {
 // ============================================================================
 
 class DiagnosticsIcons {
+  const DiagnosticsIcons();
   static const String vin = 'assets/diagnostics/vin_outline.svg';
   static const String obd = 'assets/diagnostics/obd_outline.svg';
   static const String checkEngine = 'assets/diagnostics/check_engine_outline.svg';
@@ -189,6 +202,7 @@ class DiagnosticsIcons {
 // ============================================================================
 
 class PerformanceIcons {
+  const PerformanceIcons();
   static const String horsepower = 'assets/performance/horsepower_outline.svg';
   static const String torque = 'assets/performance/torque_outline.svg';
   static const String displacement = 'assets/performance/displacement_outline.svg';
@@ -202,6 +216,7 @@ class PerformanceIcons {
 // ============================================================================
 
 class TiresIcons {
+  const TiresIcons();
   static const String tire = 'assets/suspension/tire_outline.svg'; // Note: could move to own category
   static const String wheel = 'assets/suspension/wheel_outline.svg';
   static const String alignment = 'assets/suspension/alignment_outline.svg';

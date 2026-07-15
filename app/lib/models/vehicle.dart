@@ -1,14 +1,17 @@
 class Vehicle {
-  String vin;
-  String nickname;
+  String? vin;
+  String? nickname;
   int year;
   String make;
   String model;
-  String trim;
+  String? trim;
 
-  Vehicles({
-  required this.year,
-  required this.make,
-  required this.model,
-  })
+  Vehicle({
+    required this.year,
+    required this.make,
+    required this.model,
+    this.vin,
+    this.nickname,
+    this.trim,
+  });
 }
