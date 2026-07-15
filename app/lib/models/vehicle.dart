@@ -5,4 +5,10 @@ class Vehicle {
   String make;
   String model;
   String trim;
+
+  Vehicles({
+  required this.year,
+  required this.make,
+  required this.model,
+  })
 }
