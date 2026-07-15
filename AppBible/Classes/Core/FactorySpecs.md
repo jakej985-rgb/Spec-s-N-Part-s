@@ -8,15 +8,15 @@ Date: YYYY-MM-DD
 
 ## Purpose
 
-*This class is used to get the factory lube specifications for vehicles.*
+*This class is used to get the factory dealer specifications for vehicles.*
 
 ---
 
 ## Properties
 
-- Fluid Specs Oil, Trans, Diff, Rad, Brake, Etc.
-- Basic Lube Torque Spec
-- Wheel size and Torque
+- spec like trim packages
+- drivetrain specs like engines trans etc.
+- Wheel size
 
 ---
 
