@@ -1,4 +1,4 @@
-# FactorySpecs
+# FactoryLubeSpecs
 
 Status: 🟡 Draft
 Version: 0.1
@@ -8,7 +8,7 @@ Date: YYYY-MM-DD
 
 ## Purpose
 
-*This class is used to get the factory specifications for vehicles.*
+*This class is used to get the factory lube specifications for vehicles.*
 
 ---
 
@@ -16,7 +16,7 @@ Date: YYYY-MM-DD
 
 - Fluid Specs Oil, Trans, Diff, Rad, Brake, Etc.
 - Basic Lube Torque Spec
-- Wheel size and Torque 
+- Wheel size and Torque
 
 ---
 
