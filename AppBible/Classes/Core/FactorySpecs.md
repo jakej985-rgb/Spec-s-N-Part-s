@@ -1,41 +1,53 @@
-# FactoryLubeSpecs
-
-Status: 🟡 Draft
-Version: 0.1
-Date: YYYY-MM-DD
+# Factory Specs
 
 ---
 
 ## Purpose
 
-*This class is used to get the factory dealer specifications for vehicles.*
+* *This class is used to get the factory dealer specifications for vehicles.*
 
 ---
 
 ## Properties
 
-- spec like trim packages
-- drivetrain specs like engines trans etc.
-- Wheel size
+* spec like trim packages
+* drivetrain specs like engines trans etc.
+* Wheel size
 
 ---
 
-## Responsibilities
+## Methods
+
+### Commands
 
 - Action
 - Action
 - Action
+
+### Queries
+
+- TODO
 
 ---
 
 ## Relationships
+- 
+---
+### Uses
 
-Uses:
-- Vehicle
+* Vehicle
 
-Used By:
-- Garage (maybe)
-- Spec page
+---
+### Used By
+
+* Garage (maybe)
+* Spec page
+
+---
+
+### Status
+
+:yellow_circle: Draft (V0.1)
 
 ---
 
@@ -46,23 +58,35 @@ Used By:
 
 ---
 
-## Roadmap
+## Archiving (Soft Delete)
 
-### v0.1
+- TODO
+
+---
+
+### RoadMap
 
 ```text
+Version 0.1
+
 Class
 ├── Property
 └── Property
-```
 
-### v0.2
+Version 0.2
 
-```text
 Class
 ├── New Property
 └── New Property
 ```
+
+---
+
+### ChangeLog
+
+##### v0.1
+
+- TODO
 
 ---
 

@@ -1,104 +1,124 @@
-# Maintenance Record Class
+# Maintenance Record
 
 ---
 
 ## Purpose
-Model for a single maintenance or service event tied to a vehicle.
+
+* *Model for a single maintenance or service event tied to a vehicle.*
 
 ---
 
 ## Properties
-- id: UUID (primary key)
-- vehicle_id: UUID (foreign key → Vehicles)
-- date: ISO8601 date (when service occurred)
-- mileage: integer, optional (vehicle odometer reading)
-- type: enum (oil_change, tire_rotation, brake_service, inspection, fluid_flush, transmission_service, suspension_work, electrical_work, other)
-- description: string (user notes, e.g., "Full synthetic 5W-30 from Costco")
-- cost: decimal, optional (amount spent)
-- currency: string, optional (default: USD)
-- attachments: JSON array of {file_path, file_type, label} (receipts, photos)
-- created_at: ISO8601 timestamp (when record was created)
-- updated_at: ISO8601 timestamp (when record was last updated)
-- synced_at: ISO8601 timestamp, nullable (last sync with cloud)
+
+* ID
+* Vehicle ID
+* Date
+* Mileage (optional)
+* Type
+* Description
+* Cost (optional)
+* Currency (optional)
+* Attachments (optional)
+* Created At
+* Updated At
+* Synced At (optional)
 
 ---
-
 ## Methods
 
-### Constructor
-```
-MaintenanceRecord(vehicleId, date, type, description)
-```
+### Commands
 
-### Validation
-- date must be <= today
-- type must be from enum
-- vehicle_id must reference valid vehicle
-- cost >= 0 if provided
-- description required
+- Update Notes
+- Attach Receipt
+- Attach Photo
 
-### Getters
-- getDisplayName(): string (e.g., "Oil Change - 5/15/2024")
-- getCostFormatted(): string (e.g., "$45.99")
-- getTimeAgo(): string (e.g., "3 days ago")
-- hasAttachments(): boolean
+### Queries
 
-### Setters
-- updateDescription(text)
-- updateCost(amount)
-- addAttachment(filePath, label)
-- removeAttachment(filePath)
-
-### Persistence
-- save(): Promise<void> (insert or update in DB)
-- delete(): Promise<void> (remove from DB)
-- toJSON(): object (serialize for sync)
-
+- Get Cost
+- Get Mileage
+- Get Date
 ---
 
 ## Relationships
-- belongs_to: Vehicle
-- has_many: Attachments (photos, receipts)
+- 
+---
+### Uses
+
+* Attachments
+
+---
+### Used By
+
+* Vehicles
+* Maintenance Screen
 
 ---
 
+### Status
+
+:green_circle: V0.1
+
+---
 ## Validation Rules
-- date: required, must be valid ISO8601, <= today
-- type: required, must be from predefined enum
-- description: required, max 500 characters
-- cost: optional, must be >= 0 if provided
-- mileage: optional, must be >= 0 if provided
+
+A Maintenance Record must have enough information to document a service event.
+
+Minimum required:
+
+- Date
+- Type
+- Description
+
+Optional:
+
+- Mileage
+- Cost
+- Currency
+- Attachments
 
 ---
 
 ## Archiving (Soft Delete)
+
+A Maintenance Record is immutable after creation to preserve financial and service history.
+
 - No soft delete; records are immutable after creation
 - Update only allowed for cost and notes within 24 hours
 - After 24 hours, deletion requires explicit user confirmation
 
 ---
 
-## Usage Examples
-```
-// Create and save
-const record = new MaintenanceRecord(vehicleId, new Date(), 'oil_change', '5W-30 Synthetic');
-record.cost = 45.99;
-await record.save();
+### RoadMap
 
-// Update
-record.description = '5W-30 Synthetic + filter replacement';
-await record.save();
+```text
+Version 0.1
 
-// Query
-const records = await MaintenanceRecord.findByVehicle(vehicleId);
+MaintenanceRecord
+├── ID
+├── Vehicle ID
+├── Date
+├── Mileage
+├── Type
+├── Description
+── Cost
 ```
 
 ---
 
-## Future Ideas
-- Linked expense tracking (parts + labor)
-- Recurring maintenance templates
-- Integration with OBD data (auto-fill mileage, detect issues)
+### ChangeLog
 
----
+##### v0.1
 
+```text
+class MaintenanceRecord {
+  string id;
+  string vehicleId;
+  DateTime date;
+  int mileage;
+  string type;
+  string description;
+  double cost;
+  string currency;
+  List<Attachment> attachments;
+}
+```

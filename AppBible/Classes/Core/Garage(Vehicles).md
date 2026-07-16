@@ -1,46 +1,87 @@
+# Garage
+
+---
+
 ## Purpose
-  *What is a Garage?*
-- The Garage manages all vehicles owned by the user.
+
+* *The Garage manages all vehicles owned by the user.*
+
 ---
+
 ## Properties
-- Garage (later for multi shop or location tracking to)
-- Vehicles
-- Selected Vehicle
-- Date Created
----
-## Responsibilities
 
-- Add a vehicle
-- Remove a vehicle
-- Select a vehicle
+* Garage (for potential multi-shop or location tracking)
+* Vehicles
+* Selected Vehicle
+* Date Created
+
 ---
+
+## Methods
+
+### Commands
+
+- Add Vehicle
+- Remove Vehicle
+- Select Vehicle
+
+### Queries
+
+- Get Vehicles
+- Get Selected Vehicle
+
+---
+
 ## Relationships
+- 
+---
+### Uses
 
-- Vehicle
+* Vehicle
 
 ---
-## Used By
+### Used By
 
-- Home
-- Garage Screen
+* Home
+* Garage Screen
+
 ---
-## RoadMap
 
-##### v0.1
+### Status
+
+:green_circle: V0.1
+
+---
+
+## Validation Rules
+
+- TODO
+
+---
+
+### RoadMap
+
 ```text
+Version 0.1
+
 Garage
 ├── Vehicles
 └── Selected Vehicle
-```
-##### v0.2
-```text
+
+Version 0.2
+
 Garage
 ├── Vehicles
 ├── Selected Vehicle
 └── Garage
 ```
-## ChangeLog
+
+---
+
+### ChangeLog
+
 ##### v0.1
+
 ```text
 import 'vehicle.dart';
 
@@ -49,6 +90,9 @@ class Garage {
   Vehicle selectedVehicle;
 }
 ```
+
+---
+
 ## Open Questions
 
 - Should Garage support multiple locations?

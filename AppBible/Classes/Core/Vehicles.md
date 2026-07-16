@@ -27,6 +27,31 @@
 
 ---
 
+## Methods
+
+### Commands
+
+- Change Nickname
+- Add Maintenance Record
+- Remove Maintenance Record
+- Add Photo
+- Remove Photo
+- Add Document
+- Remove Document
+- Add Modification
+- Remove Modification
+- Add Fuel Log
+
+### Queries
+
+- Get Factory Specs
+- Get Current Specs
+- Get Maintenance History
+- Get Photos
+- Get Documents
+
+---
+
 ## Relationships
 - 
 ---
@@ -39,6 +64,7 @@
 * Reminders
 * Photos
 * Documents
+
 ---
 ### Used By
 
@@ -53,6 +79,7 @@
 :green_circle: V0.1
 
 ---
+
 ## Validation Rules
 
 A Vehicle must have enough information to be uniquely identified.
@@ -70,6 +97,7 @@ Optional:
 - Nickname
 
 ### RoadMap
+
 ```text
 Version 0.1
 
@@ -99,6 +127,7 @@ Vehicle
 ├── FuelLogs
 └── Maintenance
 ```
+
 ---
 
 ### ChangeLog
@@ -115,3 +144,9 @@ class Vehicle {
   string trim;
 }
 ```
+
+---
+
+## Open Questions
+
+- TODO

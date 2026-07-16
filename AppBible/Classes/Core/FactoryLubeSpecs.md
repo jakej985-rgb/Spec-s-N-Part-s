@@ -1,41 +1,53 @@
 # FactoryLubeSpecs
 
-Status: 🟡 Draft
-Version: 0.1
-Date: YYYY-MM-DD
-
 ---
 
 ## Purpose
 
-*This class is used to get the factory lube specifications for vehicles.*
+* *This class is used to get the factory lube specifications for vehicles.*
 
 ---
 
 ## Properties
 
-- Fluid Specs Oil, Trans, Diff, Rad, Brake, Etc.
-- Basic Lube Torque Spec
-- Wheel size and Torque
+* Fluid Specs Oil, Trans, Diff, Rad, Brake, Etc.
+* Basic Lube Torque Spec
+* Wheel size and Torque
 
 ---
 
-## Responsibilities
+## Methods
+
+### Commands
 
 - Action
 - Action
 - Action
+
+### Queries
+
+- TODO
 
 ---
 
 ## Relationships
+- 
+---
+### Uses
 
-Uses:
-- Vehicle
+* Vehicle
 
-Used By:
-- Garage (maybe)
-- Spec page
+---
+### Used By
+
+* Garage (maybe)
+* Spec page
+
+---
+
+### Status
+
+:yellow_circle: Draft (V0.1)
 
 ---
 
@@ -51,18 +63,26 @@ Used By:
 ### v0.1
 
 ```text
+Version 0.1
+
 Class
 ├── Property
 └── Property
-```
 
-### v0.2
+Version 0.2
 
-```text
 Class
 ├── New Property
 └── New Property
 ```
+
+---
+
+### ChangeLog
+
+##### v0.1
+
+- TODO
 
 ---
 
