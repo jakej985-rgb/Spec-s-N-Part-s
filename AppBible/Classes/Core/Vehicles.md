@@ -16,13 +16,13 @@
 * Make
 * Model
 * Trim (optional)
-* FactorySpecs
-* CurrentSpecs (optional)
-* MaintenanceRecords (optional)
-* FuelLogs (optional)
-* Reminders (optional)
-* Photos (optional)
-* Documents (optional)
+* FactorySpecs ()
+* CurrentSpecs ()
+* MaintenanceRecords ()
+* FuelLogs ()
+* Reminders ()
+* Photos ()
+* Documents ()
 * Mileage (optional)
 
 ---
