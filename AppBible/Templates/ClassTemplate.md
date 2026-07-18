@@ -1,72 +1,80 @@
 # Class Name
 
-Status: 🟡 Draft
-Version: 0.1
-Date: YYYY-MM-DD
-
 ---
 
 ## Purpose
 
-*What is this class responsible for?*
+* *What is this class responsible for?*
 
 ---
 
 ## Properties
 
-- Property
-- Property
-- Property
+* Property
+* Property
+* Property
 
 ---
 
-## Responsibilities
+## Methods
+
+### Commands
 
 - Action
-- Action
-- Action
+
+### Queries
+
+- TODO
 
 ---
 
 ## Relationships
+- 
+---
+### Uses
 
-Uses:
-- Class
+* Class
 
-Used By:
-- Screen
-- Feature
+---
+### Used By
+
+* Screen
+* Feature
+
+---
+
+### Status
+
+:yellow_circle: Draft (V0.1)
 
 ---
 
 ## Validation Rules
 
 - Rule
-- Rule
 
 ---
 
-## Roadmap
-
-### v0.1
+### RoadMap
 
 ```text
+Version 0.1
+
 Class
 ├── Property
 └── Property
 ```
 
-### v0.2
+---
 
-```text
-Class
-├── New Property
-└── New Property
-```
+### ChangeLog
+
+##### v0.1
+
+- TODO
 
 ---
 
 ## Open Questions
 
-- Question
 - Question
