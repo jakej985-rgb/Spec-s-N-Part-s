@@ -10,7 +10,7 @@
 
 ## Properties
 
-* Garage (for potential multi-shop or location tracking)
+* Garage name (for potential multi-shop or location tracking)
 * Vehicles
 * Selected Vehicle
 * Date Created
