@@ -32,18 +32,14 @@
 ### Commands
 
 - ##### Add Maintenance Record
-
-Purpose:
-Adds a maintenance record to this vehicle.
-
-Needs:
-- MaintenanceRecord
-
-Returns:
-- Nothing
-
-Type:
-Command
+ - Purpose:
+  -Adds a maintenance record to this vehicle.
+ - Needs:
+  - MaintenanceRecord
+ -Returns:
+  - Nothing
+ - Type:
+  - Command
 - ##### Remove Maintenance Record
 
 Purpose:
