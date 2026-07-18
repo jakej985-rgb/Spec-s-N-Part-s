@@ -31,9 +31,32 @@
 
 ### Commands
 
-- Change Nickname
-- Add Maintenance Record
-- Remove Maintenance Record
+- ##### Add Maintenance Record
+
+Purpose:
+Adds a maintenance record to this vehicle.
+
+Needs:
+- MaintenanceRecord
+
+Returns:
+- Nothing
+
+Type:
+Command
+- ##### Remove Maintenance Record
+
+Purpose:
+Removes a maintenance record to this vehicle.
+
+Needs:
+- MaintenanceRecord
+
+Returns:
+- Nothing
+
+Type:
+Command
 - Add Photo
 - Remove Photo
 - Add Document
@@ -59,19 +82,7 @@
 
 * FactorySpecs
 * CurrentSpecs
-* ### Add Maintenance Record
-
-Purpose:
-Adds a maintenance record to this vehicle.
-
-Needs:
-- MaintenanceRecord
-
-Returns:
-- Nothing
-
-Type:
-Command
+* Add Maintenance Record
 * FuelLogs
 * Reminders
 * Photos
