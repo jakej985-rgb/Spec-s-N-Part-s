@@ -8,7 +8,7 @@ class MaintenanceRecord {
   final double cost;
   final String? notes;
   final String currency;
-  final List<Attachment> attachments;
+  //  final List<Attachment> attachments;
   final DateTime createdAt;
   final DateTime updatedAt;
   final DateTime? syncedAt;
@@ -23,7 +23,7 @@ class MaintenanceRecord {
     required this.cost,
     required this.currency,
     this.notes,
-    required this.attachments,
+    //    required this.attachments,
     required this.createdAt,
     required this.updatedAt,
     this.syncedAt,
