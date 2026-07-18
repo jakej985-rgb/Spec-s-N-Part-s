@@ -38,7 +38,12 @@
 
 ### Queries
 
-- TODO
+- getBrakeSpec
+- getRadSpecs
+- getOilSpecs
+- getTransSpecs
+- getDiffSpecs
+- getPsSpecs
 
 ---
 
