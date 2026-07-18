@@ -59,7 +59,19 @@
 
 * FactorySpecs
 * CurrentSpecs
-* MaintenanceRecords
+* ### Add Maintenance Record
+
+Purpose:
+Adds a maintenance record to this vehicle.
+
+Needs:
+- MaintenanceRecord
+
+Returns:
+- Nothing
+
+Type:
+Command
 * FuelLogs
 * Reminders
 * Photos
