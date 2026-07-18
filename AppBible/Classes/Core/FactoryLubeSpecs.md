@@ -10,10 +10,22 @@
 
 ## Properties
 
-* Fluid Specs Oil, Trans, Diff, Rad, Brake, Etc.
-* Basic Lube Torque Spec
-* Wheel size and Torque
-
+* Oil
+  * oil type/weight
+  * oil quantity/capacity
+* Trans
+  * oil type/weight
+  * oil quantity/capacity
+* Differential 
+  * oil type/weight
+  * oil quantity/capacity
+* Radiator
+  * type
+  * quantity/capacity
+* Brakes
+  * type
+*Power Steering
+  * type
 ---
 
 ## Methods
