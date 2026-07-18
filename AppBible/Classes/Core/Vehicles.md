@@ -36,7 +36,9 @@
 Purpose:
 
 - *Adds a maintenance record to this vehicle.*
+
 Needs:
+
 - MaintenanceRecord
 
 Returns:
