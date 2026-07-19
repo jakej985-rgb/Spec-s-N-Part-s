@@ -46,7 +46,7 @@ class LubeSpec {
       frontDifferentialFluidSpec:
           frontDifferentialFluidSpec ?? this.frontDifferentialFluidSpec,
       rearDifferentialFluid:
-          rearDifferentialFluid ?? this.rearDifferentialFluid,
+          rearDifferentialFluidSpec ?? rearDifferentialFluid,
       coolantFluid: coolantFluid ?? this.coolantFluid,
       brakeFluid: brakeFluid ?? this.brakeFluid,
       powerSteeringFluid: powerSteeringFluid ?? this.powerSteeringFluid,
