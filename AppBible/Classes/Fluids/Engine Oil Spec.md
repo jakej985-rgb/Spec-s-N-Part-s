@@ -12,7 +12,8 @@
 
 * EngineOilType
 * EngineOilCapacity 
-* EngineOilSpecifications 
+* EngineOilSpecifications
+* EngineOilAdditives
 
 ---
 
@@ -20,7 +21,8 @@
 
 ### Commands
 
-- Action
+- set preferred oil weight
+- list if multiple oil options 
 
 ### Queries
 
@@ -40,6 +42,7 @@
 
 * Screen
 * Feature
+-- fluids.dart
 
 ---
 
