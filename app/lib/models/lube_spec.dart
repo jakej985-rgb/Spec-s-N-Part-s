@@ -1,20 +1,25 @@
 import 'package:spec_s_n_part_s/models/fluids/engine_oil_spec.dart';
+import 'package:spec_s_n_part_s/models/fluids/front_diff_fluid_specs.dart'
+    show FrontDifferentialFluidSpecs;
+import 'package:spec_s_n_part_s/models/fluids/rear_diff_fluid_spec.dart';
+import 'package:spec_s_n_part_s/models/fluids/transmission_fluid_specs.dart';
+import 'package:spec_s_n_part_s/models/fluids/transfer_case_fluid_spec.dart';
 
 class LubeSpec {
   final EngineOilSpec engineOilSpecs;
-  final String transmissionFluid;
-  final String? transferCaseFluid;
-  final String? frontDifferentialFluid;
-  final String? rearDifferentialFluid;
+  final TransmissionFluidSpecs transmissionFluidSpecs;
+  final TransferCaseFluidSpec? transferCaseFluidSpec;
+  final FrontDifferentialFluidSpecs? frontDifferentialFluidSpec;
+  final RearDifferentialFluidSpecs? rearDifferentialFluid;
   final String coolantFluid;
   final String brakeFluid;
   final String? powerSteeringFluid;
 
   LubeSpec({
     required this.engineOilSpecs,
-    required this.transmissionFluid,
-    this.transferCaseFluid,
-    this.frontDifferentialFluid,
+    required this.transmissionFluidSpecs,
+    this.transferCaseFluidSpec,
+    this.frontDifferentialFluidSpec,
     this.rearDifferentialFluid,
     required this.coolantFluid,
     required this.brakeFluid,
@@ -24,20 +29,22 @@ class LubeSpec {
   // copyWith method to allow safely replacing fields with custom values
   LubeSpec copyWith({
     EngineOilSpec? engineOilSpecs,
-    String? transmissionFluid,
-    String? transferCaseFluid,
-    String? frontDifferentialFluid,
-    String? rearDifferentialFluid,
+    TransmissionFluidSpecs? transmissionFluidSpecs,
+    TransferCaseFluidSpec? transferCaseFluidSpec,
+    FrontDifferentialFluidSpecs? frontDifferentialFluidSpec,
+    RearDifferentialFluidSpecs? rearDifferentialFluidSpec,
     String? coolantFluid,
     String? brakeFluid,
     String? powerSteeringFluid,
   }) {
     return LubeSpec(
       engineOilSpecs: engineOilSpecs ?? this.engineOilSpecs,
-      transmissionFluid: transmissionFluid ?? this.transmissionFluid,
-      transferCaseFluid: transferCaseFluid ?? this.transferCaseFluid,
-      frontDifferentialFluid:
-          frontDifferentialFluid ?? this.frontDifferentialFluid,
+      transmissionFluidSpecs:
+          transmissionFluidSpecs ?? this.transmissionFluidSpecs,
+      transferCaseFluidSpec:
+          transferCaseFluidSpec ?? this.transferCaseFluidSpec,
+      frontDifferentialFluidSpec:
+          frontDifferentialFluidSpec ?? this.frontDifferentialFluidSpec,
       rearDifferentialFluid:
           rearDifferentialFluid ?? this.rearDifferentialFluid,
       coolantFluid: coolantFluid ?? this.coolantFluid,
