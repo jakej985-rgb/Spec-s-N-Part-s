@@ -12,7 +12,7 @@
 
 * VIN (optional)
 * Nickname (optional)
-* Year 
+* Year
 * Make
 * Model
 * Trim (optional)
@@ -31,62 +31,204 @@
 
 ### Commands
 
- #### Add Maintenance Record
+#### Add Maintenance Record
 
 Purpose:
 
-- *Adds a maintenance record to this vehicle.*
+* *Adds a maintenance record to this vehicle.*
 
-Needs:
+**Needs:**
 
-- MaintenanceRecord
+* MaintenanceRecord
 
-Returns:
+**Returns:**
 
-- Nothing
-Type:
+* Nothing
 
-- Command
+**Type:**
 
- #### Remove Maintenance Record
+* Command
 
-Purpose:
+#### Remove Maintenance Record
+
+**Purpose:**
 
 * *Removes a maintenance record to this vehicle.*
 
-Needs:
+**Needs:**
 
-- MaintenanceRecord
+* MaintenanceRecord
 
-Returns:
+**Returns:**
 
-- Nothing
+* Nothing
 
-Type:
+**Type:**
 
-Command
+* Command
 
 #### Add Photo
-- Remove Photo
-- Add Document
-- Remove Document
-- Add Modification
-- Remove Modification
-- Add Fuel Log
+
+* *Adds a photo to this vehicle.*
+
+**Needs:**
+
+* Photo
+
+**Returns:**
+
+* Nothing
+
+**Type:**
+
+* Command
+
+#### Remove Photo
+
+* *Removes a photo from this vehicle.*
+
+**Needs:**
+
+* Photo
+
+**Returns:**
+
+* Nothing
+
+**Type:**
+
+* Command
+
+#### Add Document
+
+* *Adds a document to this vehicle.*
+
+**Needs:**
+
+* Document
+
+**Returns:**
+
+* Nothing
+
+**Type:**
+
+* Command
+
+#### Remove Document
+
+* *Removes a document from this vehicle.*
+
+**Needs:**
+
+* Document
+
+**Returns:**
+
+* Nothing
+
+**Type:**
+
+* Command
+
+#### Add Fuel Log
+
+**Needs:**
+
+* FuelLog
+
+**Returns:**
+
+* Nothing
+
+**Type:**
+
+* Command
 
 ### Queries
 
-- Get Factory Specs
-- Get Current Specs
-- Get Maintenance History
-- Get Photos
-- Get Documents
+#### Get Factory Specs
+
+**Purpose:**
+
+* *Returns the factory specifications for this vehicle.*
+
+**Needs:**
+
+* FactorySpecs
+
+**Returns:**
+
+* FactorySpecs
+
+**Type:**
+
+* Query
+
+#### Get Current Specs
+
+**Purpose:**
+
+* *Returns the current specifications for this vehicle.*
+
+**Needs:**
+
+* CurrentSpecs
+
+**Returns:**
+
+* CurrentSpecs
+
+**Type:**
+
+* Query
+
+#### Get Maintenance History
+
+**Purpose:**
+
+* *Returns the maintenance history for this vehicle.*
+
+**Needs:**
+
+* MaintenanceRecord
+
+**Returns:**
+
+* `List<MaintenanceRecord>`
+
+**Type:**
+
+* Query
+
+#### Get Photos
+
+**Purpose:**
+
+* *Returns the photos for this vehicle.*
+
+**Needs:**
+
+* Photo
+
+**Returns:**
+
+* `List<Photo>`
+
+**Type:**
+
+* Query
+
+#### Get Documents
 
 ---
 
 ## Relationships
-- 
+
+*
+
 ---
+
 ### Uses
 
 * FactorySpecs
@@ -98,6 +240,7 @@ Command
 * Documents
 
 ---
+
 ### Used By
 
 * Garage Screen
@@ -118,15 +261,15 @@ A Vehicle must have enough information to be uniquely identified.
 
 Minimum required:
 
-- Year
-- Make
-- Model
+* Year
+* Make
+* Model
 
 Optional:
 
-- VIN
-- Trim
-- Nickname
+* VIN
+* Trim
+* Nickname
 
 ### RoadMap
 
@@ -164,7 +307,7 @@ Vehicle
 
 ### ChangeLog
 
-##### v0.1
+#### v0.1
 
 ```text
 class Vehicle {
@@ -181,4 +324,4 @@ class Vehicle {
 
 ## Open Questions
 
-- TODO
+* TODO
