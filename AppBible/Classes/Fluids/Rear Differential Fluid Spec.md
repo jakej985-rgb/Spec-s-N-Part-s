@@ -1,18 +1,18 @@
-# Class Name
+# RearDifferentialFluidSpecs
 
 ---
 
 ## Purpose
 
-* *What is this class responsible for?*
+* Data model representing rear differential fluid specifications, capacity, and standards.
 
 ---
 
 ## Properties
 
-* Property
-* Property
-* Property
+* `type` (`String`): The recommended differential fluid type/viscosity (e.g., 75W-90, 75W-140 Synthetic).
+* `capacity` (`String`): Fluid capacity requirement for the rear differential.
+* `specification` (`String?` optional): Specific manufacturer specification or standard (e.g., GL-5).
 
 ---
 
@@ -20,38 +20,41 @@
 
 ### Commands
 
-- Action
+* N/A (Immutable Data Model)
 
 ### Queries
 
-- TODO
+* N/A
 
 ---
 
 ## Relationships
-- 
+
 ---
+
 ### Uses
 
-* Class
+* N/A
 
 ---
+
 ### Used By
 
-* Screen
-* Feature
+* [Fluids](file:///home/m3tal/Github/Spec-s-N-Part-s/AppBible/Classes/Fluids/Fluids.md)
 
 ---
 
 ### Status
 
-:yellow_circle: Draft (V0.1)
+:green_circle: Implemented (V0.1)
 
 ---
 
 ## Validation Rules
 
-- Rule
+- `type` is required.
+- `capacity` is required.
+- `specification` is optional.
 
 ---
 
@@ -60,9 +63,10 @@
 ```text
 Version 0.1
 
-Class
-├── Property
-└── Property
+RearDifferentialFluidSpecs
+├── type (String)
+├── capacity (String)
+└── specification (String?)
 ```
 
 ---
@@ -71,10 +75,10 @@ Class
 
 ##### v0.1
 
-- TODO
+- Synchronized documentation with Dart model in [rear_diff_fluid_spec.dart](file:///home/m3tal/Github/Spec-s-N-Part-s/app/lib/models/fluids/rear_diff_fluid_spec.dart).
 
 ---
 
 ## Open Questions
 
-- Question
+* None

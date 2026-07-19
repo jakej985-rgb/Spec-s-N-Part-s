@@ -1,18 +1,18 @@
-# FrontDifferentialFluidSpecs
+# TransferCaseFluidSpec
 
 ---
 
 ## Purpose
 
-* Data model representing front differential fluid specifications, capacity, and standards.
+* Data model representing transfer case fluid specification, capacity, and standards.
 
 ---
 
 ## Properties
 
-* `type` (`String`): The recommended differential fluid type/viscosity (e.g., 75W-90, 80W-90).
-* `capacity` (`String`): Fluid capacity requirement for the front differential.
-* `specification` (`String?` optional): Specific manufacturer specification or standard (e.g., GL-5).
+* `type` (`String`): The recommended transfer case fluid type (e.g., ATF, Gear Lube, Special Transfer Case Fluid).
+* `capacity` (`String`): Fluid capacity requirement for the transfer case.
+* `specification` (`String?` optional): Specific OEM specification or standard.
 
 ---
 
@@ -63,7 +63,7 @@
 ```text
 Version 0.1
 
-FrontDifferentialFluidSpecs
+TransferCaseFluidSpec
 ├── type (String)
 ├── capacity (String)
 └── specification (String?)
@@ -75,7 +75,7 @@ FrontDifferentialFluidSpecs
 
 ##### v0.1
 
-- Synchronized documentation with Dart model in [front_diff_fluid_specs.dart](file:///home/m3tal/Github/Spec-s-N-Part-s/app/lib/models/fluids/front_diff_fluid_specs.dart).
+- Created documentation synchronized with Dart model in [transfer_case_fluid_spec.dart](file:///home/m3tal/Github/Spec-s-N-Part-s/app/lib/models/fluids/transfer_case_fluid_spec.dart).
 
 ---
 

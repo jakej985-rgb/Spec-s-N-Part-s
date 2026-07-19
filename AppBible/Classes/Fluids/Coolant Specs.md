@@ -1,18 +1,17 @@
-# Class Name
+# CoolantSpecs
 
 ---
 
 ## Purpose
 
-* *What is this class responsible for?*
+* Data model representing coolant specification and capacity for a vehicle.
 
 ---
 
 ## Properties
 
-* Property
-* Property
-* Property
+* `type` (`String`): The recommended coolant type/chemistry (e.g., HOAT, OAT, Ethylene Glycol).
+* `capacity` (`String`): Total cooling system fluid capacity.
 
 ---
 
@@ -20,38 +19,40 @@
 
 ### Commands
 
-- Action
+* N/A (Immutable Data Model)
 
 ### Queries
 
-- TODO
+* N/A
 
 ---
 
 ## Relationships
-- 
+
 ---
+
 ### Uses
 
-* Class
+* N/A
 
 ---
+
 ### Used By
 
-* Screen
-* Feature
+* [Fluids](file:///home/m3tal/Github/Spec-s-N-Part-s/AppBible/Classes/Fluids/Fluids.md)
 
 ---
 
 ### Status
 
-:yellow_circle: Draft (V0.1)
+:green_circle: Implemented (V0.1)
 
 ---
 
 ## Validation Rules
 
-- Rule
+- `type` is required.
+- `capacity` is required.
 
 ---
 
@@ -60,9 +61,9 @@
 ```text
 Version 0.1
 
-Class
-├── Property
-└── Property
+CoolantSpecs
+├── type (String)
+└── capacity (String)
 ```
 
 ---
@@ -71,10 +72,10 @@ Class
 
 ##### v0.1
 
-- TODO
+- Synchronized documentation with Dart model in [coolant_specs.dart](file:///home/m3tal/Github/Spec-s-N-Part-s/app/lib/models/fluids/coolant_specs.dart).
 
 ---
 
 ## Open Questions
 
-- Question
+* None

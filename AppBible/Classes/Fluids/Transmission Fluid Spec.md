@@ -1,18 +1,18 @@
-# Class Name
+# TransmissionFluidSpecs
 
 ---
 
 ## Purpose
 
-* *What is this class responsible for?*
+* Data model representing transmission fluid specifications, capacity, and standards.
 
 ---
 
 ## Properties
 
-* Property
-* Property
-* Property
+* `type` (`String`): The recommended transmission fluid type (e.g., Dexron VI, Mercon V, 75W-90 GL-4).
+* `capacity` (`String`): Fluid capacity requirement for the transmission refill / dry fill.
+* `specification` (`String?` optional): Specific OEM specification or requirement standard.
 
 ---
 
@@ -20,38 +20,41 @@
 
 ### Commands
 
-- Action
+* N/A (Immutable Data Model)
 
 ### Queries
 
-- TODO
+* N/A
 
 ---
 
 ## Relationships
-- 
+
 ---
+
 ### Uses
 
-* Class
+* N/A
 
 ---
+
 ### Used By
 
-* Screen
-* Feature
+* [Fluids](file:///home/m3tal/Github/Spec-s-N-Part-s/AppBible/Classes/Fluids/Fluids.md)
 
 ---
 
 ### Status
 
-:yellow_circle: Draft (V0.1)
+:green_circle: Implemented (V0.1)
 
 ---
 
 ## Validation Rules
 
-- Rule
+- `type` is required.
+- `capacity` is required.
+- `specification` is optional.
 
 ---
 
@@ -60,9 +63,10 @@
 ```text
 Version 0.1
 
-Class
-├── Property
-└── Property
+TransmissionFluidSpecs
+├── type (String)
+├── capacity (String)
+└── specification (String?)
 ```
 
 ---
@@ -71,10 +75,10 @@ Class
 
 ##### v0.1
 
-- TODO
+- Synchronized documentation with Dart model in [transmission_fluid_specs.dart](file:///home/m3tal/Github/Spec-s-N-Part-s/app/lib/models/fluids/transmission_fluid_specs.dart).
 
 ---
 
 ## Open Questions
 
-- Question
+* None

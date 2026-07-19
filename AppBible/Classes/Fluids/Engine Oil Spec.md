@@ -1,19 +1,19 @@
-# Engine oil specs
+# EngineOilSpec
 
 ---
 
 ## Purpose
 
-* *this is for engine weights and capacity*
+* Data model representing engine oil specifications, viscosity, type, weight, and capacity.
 
 ---
 
 ## Properties
 
-* EngineOilType
-* EngineOilCapacity 
-* EngineOilSpecifications
-* EngineOilAdditives
+* `viscosity` (`String`): The fluid viscosity rating (e.g., 5W-30, 0W-20).
+* `oilType` (`String`): The oil formulation type (e.g., Full Synthetic, Synthetic Blend, Conventional).
+* `oilWeight` (`String`): The oil weight recommendation.
+* `oilCapacity` (`String`): Total oil capacity including filter refill amount.
 
 ---
 
@@ -21,40 +21,42 @@
 
 ### Commands
 
-- set preferred oil weight
-- list if multiple oil options 
+* N/A (Immutable Data Model)
 
 ### Queries
 
-- TODO
+* N/A
 
 ---
 
 ## Relationships
-- 
+
 ---
+
 ### Uses
 
-* Class
+* N/A
 
 ---
+
 ### Used By
 
-* Screen
-* Feature
--- fluids.dart
+* [Fluids](file:///home/m3tal/Github/Spec-s-N-Part-s/AppBible/Classes/Fluids/Fluids.md)
 
 ---
 
 ### Status
 
-:yellow_circle: Draft (V0.1)
+:green_circle: Implemented (V0.1)
 
 ---
 
 ## Validation Rules
 
-- Rule
+- `viscosity` is required.
+- `oilType` is required.
+- `oilWeight` is required.
+- `oilCapacity` is required.
 
 ---
 
@@ -63,9 +65,11 @@
 ```text
 Version 0.1
 
-Class
-├── Property
-└── Property
+EngineOilSpec
+├── viscosity (String)
+├── oilType (String)
+├── oilWeight (String)
+└── oilCapacity (String)
 ```
 
 ---
@@ -74,10 +78,10 @@ Class
 
 ##### v0.1
 
-- TODO
+- Synchronized documentation with Dart model in [engine_oil_spec.dart](file:///home/m3tal/Github/Spec-s-N-Part-s/app/lib/models/fluids/engine_oil_spec.dart).
 
 ---
 
 ## Open Questions
 
-- Question
+* None

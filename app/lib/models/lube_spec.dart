@@ -1,9 +1,4 @@
-import 'package:spec_s_n_part_s/models/fluids/engine_oil_spec.dart';
-import 'package:spec_s_n_part_s/models/fluids/front_diff_fluid_specs.dart'
-    show FrontDifferentialFluidSpecs;
-import 'package:spec_s_n_part_s/models/fluids/rear_diff_fluid_spec.dart';
-import 'package:spec_s_n_part_s/models/fluids/transmission_fluid_specs.dart';
-import 'package:spec_s_n_part_s/models/fluids/transfer_case_fluid_spec.dart';
+import 'package:spec_s_n_part_s/models/fluids/fluids.dart';
 
 class LubeSpec {
   final EngineOilSpec engineOilSpecs;
@@ -45,8 +40,7 @@ class LubeSpec {
           transferCaseFluidSpec ?? this.transferCaseFluidSpec,
       frontDifferentialFluidSpec:
           frontDifferentialFluidSpec ?? this.frontDifferentialFluidSpec,
-      rearDifferentialFluid:
-          rearDifferentialFluidSpec ?? rearDifferentialFluid,
+      rearDifferentialFluid: rearDifferentialFluidSpec ?? rearDifferentialFluid,
       coolantFluid: coolantFluid ?? this.coolantFluid,
       brakeFluid: brakeFluid ?? this.brakeFluid,
       powerSteeringFluid: powerSteeringFluid ?? this.powerSteeringFluid,

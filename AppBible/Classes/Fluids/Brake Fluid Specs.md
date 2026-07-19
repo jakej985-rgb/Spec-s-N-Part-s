@@ -10,9 +10,7 @@
 
 ## Properties
 
-* Property
-* Property
-* Property
+* Type: `String`
 
 ---
 
@@ -20,26 +18,30 @@
 
 ### Commands
 
-- Action
+*
 
 ### Queries
 
-- TODO
+*
 
----
+*---
 
 ## Relationships
-- 
+
+*
+
 ---
+
 ### Uses
 
-* Class
+* Fluids
 
 ---
+
 ### Used By
 
-* Screen
-* Feature
+* Fluids
+* GetBrakeFluidSpec
 
 ---
 
@@ -51,7 +53,7 @@
 
 ## Validation Rules
 
-- Rule
+* Rule
 
 ---
 
@@ -71,10 +73,10 @@ Class
 
 ##### v0.1
 
-- TODO
+* TODO
 
 ---
 
 ## Open Questions
 
-- Question
+* Question
