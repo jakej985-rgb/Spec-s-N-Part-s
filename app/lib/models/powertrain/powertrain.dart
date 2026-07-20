@@ -7,7 +7,7 @@ class Powertrain {
   final String transmissionType;
   final drivetrain driveType;
 
-  Drivetrain({
+  Powertrain({
     required this.engineType,
     required this.engineSize,
     required this.engineCylinders,
