@@ -1,6 +1,6 @@
 import 'drivetrain.dart'
 
-class Drivetrain {
+class Powertrain {
   final String engineType;
   final String engineSize;
   final String engineCylinders;
