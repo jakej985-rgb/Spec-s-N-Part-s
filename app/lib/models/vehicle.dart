@@ -1,4 +1,4 @@
-import 'package:spec_s_n_part_s/models/drivetrain.dart';
+import 'package:spec_s_n_part_s/models/powertrain/powertrain.dart';
 import 'package:spec_s_n_part_s/models/lube_spec.dart';
 
 class Vehicle {
@@ -8,10 +8,10 @@ class Vehicle {
   final String make;
   final String model;
   final String? trim;
-  final Drivetrain
-  factoryDrivetrain; // The factory specs (immutable, read-only)
-  final Drivetrain?
-  currentDrivetrain; // The current specs (starts equal to factory, changes if engine is swapped)
+  final Powertrain
+  factoryPowertrain; // The factory specs (immutable, read-only)
+  final Powertrain?
+  currentPowertrain; // The current specs (starts equal to factory, changes if engine is swapped)
   final LubeSpec factoryLubeSpec;
   final LubeSpec? currentLubeSpec;
 
@@ -19,9 +19,9 @@ class Vehicle {
     required this.year,
     required this.make,
     required this.model,
-    required this.factoryDrivetrain,
+    required this.factoryPowertrain,
     required this.factoryLubeSpec,
-    this.currentDrivetrain,
+    this.currentPowertrain,
     this.currentLubeSpec,
     this.vin,
     this.nickname,
@@ -31,17 +31,17 @@ class Vehicle {
   // copyWith method to allow safely replacing the current specs when a swap happens
   Vehicle copyWith({
     String? nickname,
-    Drivetrain? currentDrivetrain,
+    Powertrain? currentPowertrain,
     LubeSpec? currentLubeSpec,
   }) {
     return Vehicle(
       year: year,
       make: make,
       model: model,
-      factoryDrivetrain: factoryDrivetrain,
+      factoryPowertrain: factoryPowertrain,
       factoryLubeSpec: factoryLubeSpec,
       currentLubeSpec: currentLubeSpec ?? this.currentLubeSpec,
-      currentDrivetrain: currentDrivetrain ?? this.currentDrivetrain,
+      currentPowertrain: currentPowertrain ?? this.currentPowertrain,
       vin: vin,
       nickname: nickname ?? this.nickname,
       trim: trim,
