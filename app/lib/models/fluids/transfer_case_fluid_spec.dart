@@ -1,11 +1,9 @@
-class TransferCaseFluidSpec {
-  final String type;
-  final String capacity;
-  final String? specification;
+import 'fluid_spec.dart';
 
-  TransferCaseFluidSpec({
-    required this.type,
-    required this.capacity,
-    this.specification,
+class TransferCaseFluidSpec extends FluidSpec {
+  const TransferCaseFluidSpec({
+    required super.type,
+    super.capacity,
+    super.specification,
   });
 }

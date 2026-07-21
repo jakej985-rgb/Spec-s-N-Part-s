@@ -1,7 +1,7 @@
 import 'fluid_spec.dart';
 
-class BrakeFluidSpec extends FluidSpec {
-  const BrakeFluidSpec({
+class FrontDiffFluidSpec extends FluidSpec {
+  const FrontDiffFluidSpec({
     required super.type,
     super.capacity,
     super.specification,

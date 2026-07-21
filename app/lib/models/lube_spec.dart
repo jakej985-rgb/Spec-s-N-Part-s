@@ -1,49 +1,49 @@
 import 'package:spec_s_n_part_s/models/fluids/fluids.dart';
 
 class LubeSpec {
-  final EngineOilSpec engineOilSpecs;
-  final TransmissionFluidSpecs transmissionFluidSpecs;
+  final EngineOilSpec engineOilSpec;
+  final TransmissionFluidSpec transmissionFluidSpec;
   final TransferCaseFluidSpec? transferCaseFluidSpec;
-  final FrontDifferentialFluidSpecs? frontDifferentialFluidSpec;
-  final RearDifferentialFluidSpecs? rearDifferentialFluid;
-  final String coolantFluid;
-  final String brakeFluid;
-  final String? powerSteeringFluid;
+  final FrontDiffFluidSpec? frontDiffFluidSpec;
+  final RearDiffFluidSpec? rearDiffFluidSpec;
+  final CoolantSpec coolantSpec;
+  final BrakeFluidSpec brakeFluidSpec;
+  final PowerSteeringFluidSpec? powerSteeringFluidSpec;
 
-  LubeSpec({
-    required this.engineOilSpecs,
-    required this.transmissionFluidSpecs,
+  const LubeSpec({
+    required this.engineOilSpec,
+    required this.transmissionFluidSpec,
     this.transferCaseFluidSpec,
-    this.frontDifferentialFluidSpec,
-    this.rearDifferentialFluid,
-    required this.coolantFluid,
-    required this.brakeFluid,
-    this.powerSteeringFluid,
+    this.frontDiffFluidSpec,
+    this.rearDiffFluidSpec,
+    required this.coolantSpec,
+    required this.brakeFluidSpec,
+    this.powerSteeringFluidSpec,
   });
 
   // copyWith method to allow safely replacing fields with custom values
   LubeSpec copyWith({
-    EngineOilSpec? engineOilSpecs,
-    TransmissionFluidSpecs? transmissionFluidSpecs,
+    EngineOilSpec? engineOilSpec,
+    TransmissionFluidSpec? transmissionFluidSpec,
     TransferCaseFluidSpec? transferCaseFluidSpec,
-    FrontDifferentialFluidSpecs? frontDifferentialFluidSpec,
-    RearDifferentialFluidSpecs? rearDifferentialFluidSpec,
-    String? coolantFluid,
-    String? brakeFluid,
-    String? powerSteeringFluid,
+    FrontDiffFluidSpec? frontDiffFluidSpec,
+    RearDiffFluidSpec? rearDiffFluidSpec,
+    CoolantSpec? coolantSpec,
+    BrakeFluidSpec? brakeFluidSpec,
+    PowerSteeringFluidSpec? powerSteeringFluidSpec,
   }) {
     return LubeSpec(
-      engineOilSpecs: engineOilSpecs ?? this.engineOilSpecs,
-      transmissionFluidSpecs:
-          transmissionFluidSpecs ?? this.transmissionFluidSpecs,
+      engineOilSpec: engineOilSpec ?? this.engineOilSpec,
+      transmissionFluidSpec:
+          transmissionFluidSpec ?? this.transmissionFluidSpec,
       transferCaseFluidSpec:
           transferCaseFluidSpec ?? this.transferCaseFluidSpec,
-      frontDifferentialFluidSpec:
-          frontDifferentialFluidSpec ?? this.frontDifferentialFluidSpec,
-      rearDifferentialFluid: rearDifferentialFluidSpec ?? rearDifferentialFluid,
-      coolantFluid: coolantFluid ?? this.coolantFluid,
-      brakeFluid: brakeFluid ?? this.brakeFluid,
-      powerSteeringFluid: powerSteeringFluid ?? this.powerSteeringFluid,
+      frontDiffFluidSpec: frontDiffFluidSpec ?? this.frontDiffFluidSpec,
+      rearDiffFluidSpec: rearDiffFluidSpec ?? this.rearDiffFluidSpec,
+      coolantSpec: coolantSpec ?? this.coolantSpec,
+      brakeFluidSpec: brakeFluidSpec ?? this.brakeFluidSpec,
+      powerSteeringFluidSpec:
+          powerSteeringFluidSpec ?? this.powerSteeringFluidSpec,
     );
   }
 }

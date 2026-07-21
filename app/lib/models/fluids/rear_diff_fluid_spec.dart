@@ -1,11 +1,9 @@
-class RearDifferentialFluidSpecs {
-  final String type;
-  final String capacity;
-  final String? specification;
+import 'fluid_spec.dart';
 
-  RearDifferentialFluidSpecs({
-    required this.type,
-    required this.capacity,
-    this.specification,
+class RearDiffFluidSpec extends FluidSpec {
+  const RearDiffFluidSpec({
+    required super.type,
+    super.capacity,
+    super.specification,
   });
 }

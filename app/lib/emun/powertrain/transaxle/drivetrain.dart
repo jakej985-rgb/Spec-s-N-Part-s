@@ -2,7 +2,9 @@ enum Drivetrain {
   frontWheelDrive,
   rearWheelDrive,
   allWheelDrive,
-  fourWheelDrive;
+  fourWheelDrive,
+  frontDifferentialRearDifferential,
+  transferCaseRearDifferential;
 
   static Drivetrain fromString(String str) {
     switch (str) {
@@ -14,6 +16,10 @@ enum Drivetrain {
         return Drivetrain.allWheelDrive;
       case 'Four-Wheel Drive':
         return Drivetrain.fourWheelDrive;
+      case 'All-Wheel Drive with Transfer Case and Rear Differential':
+        return Drivetrain.transferCaseRearDifferential;
+      case 'All-Wheel Drive with Front and Rear Differential':
+        return Drivetrain.frontDifferentialRearDifferential;
       default:
         throw ArgumentError('Invalid drivetrain: $str');
     }

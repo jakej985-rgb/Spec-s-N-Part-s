@@ -1,13 +1,12 @@
-class EngineOilSpec {
-  final String viscosity;
-  final String oilType;
-  final String oilWeight;
-  final String oilCapacity;
+import 'fluid_spec.dart';
 
-  EngineOilSpec({
+class EngineOilSpec extends FluidSpec {
+  final String viscosity;
+
+  const EngineOilSpec({
+    required super.type,
+    required super.capacity,
     required this.viscosity,
-    required this.oilType,
-    required this.oilWeight,
-    required this.oilCapacity,
+    super.specification,
   });
 }

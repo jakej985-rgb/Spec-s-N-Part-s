@@ -1,13 +1,16 @@
 import '../../emun/powertrain/transaxle/drivetrain.dart';
 import 'engine.dart';
-import 'transmisson.dart';
+import 'transmission.dart';
+
+export 'engine.dart';
+export 'transmission.dart';
 
 class Powertrain {
   final Engine engine;
   final Transmission transmission;
   final Drivetrain driveType;
 
-  Powertrain({
+  const Powertrain({
     required this.engine,
     required this.transmission,
     required this.driveType,
@@ -23,8 +26,7 @@ class Powertrain {
 
   Map<String, dynamic> toJson() => {
     'engine': engine.toJson(),
-    'transmissionType': transmission.transmissionType.name,
-    'transmissionGears': transmission.transmissionGears,
+    'transmission': transmission.toJson(),
     'driveType': driveType.name,
   };
 }

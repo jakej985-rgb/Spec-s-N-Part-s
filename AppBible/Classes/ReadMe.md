@@ -19,9 +19,11 @@
 
 ## Specifications
 
-- Engine
-- Transmission
-- FluidSpec
+- [Powertrain](powertrain/powertrain.md)
+- [Engine](powertrain/engine.md)
+- [Transmission](powertrain/transmission.md)
+- [Drivetrain](powertrain/drivetrain.md)
+- [Fluids](Fluids/fluids.md)
 - ServiceSchedule
 
 ## Parts
