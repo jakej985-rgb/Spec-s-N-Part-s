@@ -3,7 +3,7 @@
 ---
 
 ## Overview
-Entity-relationship model for core domain objects: Vehicles, MaintenanceRecords, FluidSpecs, Modifications, Parts, and Reminders.
+Entity-relationship model for core domain objects: Vehicles, Powertrain, LubeSpec/FluidSpecs, MaintenanceRecords, FuelLogs, Modifications, Parts, Reminders, and ServiceSchedules.
 
 ---
 
@@ -11,45 +11,49 @@ Entity-relationship model for core domain objects: Vehicles, MaintenanceRecords,
 
 ### Vehicle
 Primary entity representing a user's car.
-- Attributes: id, name, vin, year, make, model, trim, image, selected
-- Relationships: has many MaintenanceRecords, FluidSpecs, Modifications, Reminders, Parts
-- Validation: VIN must be unique if provided; year must be >= 1900; make, model required
-- Soft delete: no; just archive by creating a new vehicle record if needed
+- Attributes: vin, nickname, year, make, model, trim, factoryPowertrain, currentPowertrain, factoryLubeSpec, currentLubeSpec
+- Relationships: has many MaintenanceRecords, FuelLogs, Modifications, Reminders, Parts, ServiceSchedules
+- Validation: year, make, model required
+
+### Powertrain
+Specification entity combining engine, transmission, and drivetrain setup.
+- Attributes: engine (EngineType, EngineCylinders, EngineForm, engineSize), transmission (TransmissionType, TransmissionGears), driveType (Drivetrain)
+- Relationships: belongs to Vehicle (as factory or current specs)
+
+### LubeSpec & FluidSpec
+Factory and custom fluid specifications for a vehicle.
+- Attributes: engineOilSpec, transmissionFluidSpec, transferCaseFluidSpec, frontDiffFluidSpec, rearDiffFluidSpec, coolantSpec, brakeFluidSpec, powerSteeringFluidSpec
+- Base class: FluidSpec (type, capacity, specification)
 
 ### Maintenance Record
 Tracks service events and maintenance history.
-- Attributes: id, vehicle_id, date, mileage, type, description, cost, attachments
+- Attributes: id, vehicleId, date, mileage, serviceType, description, cost, currency, notes, attachments
 - Relationships: belongs to Vehicle; may link to Reminders
-- Validation: date and vehicle_id required; type from enum
-- Use: log oil changes, tire rotations, inspections, repairs
 
-### Fluid Spec
-Factory fluid recommendations for a vehicle.
-- Attributes: id, vehicle_id, fluid_type, specification, capacity, interval
+### Fuel Log
+Tracks fuel fill-up events, efficiency, and cost.
+- Attributes: fuelGrade (FuelGrade), miles, gallons, price, date
 - Relationships: belongs to Vehicle
-- Validation: fluid_type from enum; specification required
-- Use: display on Fluids screen and link to Parts page
 
 ### Modification
 Custom engine, suspension, or other aftermarket changes.
-- Attributes: id, vehicle_id, category, name, description, date_installed, cost, images
+- Attributes: id, vehicleId, category (ModCategory), name, description, dateInstalled, cost, notes, isBoltOn
 - Relationships: belongs to Vehicle
-- Validation: category from enum; name required
-- Use: track performance or cosmetic modifications and associated costs
 
-### Parts Wishlist Entry
-Bookmarked or saved parts for future purchase.
-- Attributes: id, vehicle_id, part_number, name, category, vendor_links
+### Part
+Bookmarked or saved replacement/aftermarket parts.
+- Attributes: id, vehicleId, partNumber, name, brand, category (PartCategory), description, price, vendorUrl, notes
 - Relationships: belongs to Vehicle
-- Validation: part_number or name required
-- Use: quickly add and organize parts of interest across vendors
 
 ### Reminder
 Maintenance or service reminders tied to date or mileage.
-- Attributes: id, vehicle_id, type, due_date, due_mileage, description, completed
+- Attributes: id, vehicleId, type (ReminderType), title, description, dueDate, dueMileage, isCompleted, snoozedUntil
 - Relationships: belongs to Vehicle; may reference MaintenanceRecords
-- Validation: type from enum; due_date or due_mileage required
-- Use: notify users of upcoming maintenance
+
+### Service Schedule
+Factory recommended maintenance schedule intervals.
+- Attributes: id, vehicleId, serviceType, intervalMonths, intervalMiles, description, isEssential
+- Relationships: belongs to Vehicle
 
 ---
 
@@ -57,30 +61,17 @@ Maintenance or service reminders tied to date or mileage.
 
 ```
 Vehicle
+  |-- Powertrain (1:1 Factory, 1:1 Current)
+  |-- LubeSpec (1:1 Factory, 1:1 Current)
   |-- MaintenanceRecord (1:M)
-  |-- FluidSpec (1:M)
+  |-- FuelLog (1:M)
   |-- Modification (1:M)
-  |-- Parts (1:M)
+  |-- Part (1:M)
   |-- Reminder (1:M)
+  |-- ServiceSchedule (1:M)
 ```
 
 ---
 
 ## Aggregate Root
-Vehicle is the aggregate root. All operations on child entities should flow through Vehicle for consistency.
-
----
-
-## Value Objects
-- VIN (validated, normalized)
-- Money (amount + currency)
-- Date/Interval (due date + optional mileage-based interval)
-
----
-
-## Future Ideas
-- Component entity for tracking individual performance parts (e.g., intercooler, headers).
-- Mod package pre-sets (common builds).
-- Cross-vehicle templates for bulk maintenance logging.
-
----
+Vehicle is the aggregate root. All operations on child entities flow through Vehicle for domain consistency.

@@ -3,19 +3,19 @@
 ## Core
 
 - [Vehicle](Core/Vehicles.md)
-- FactorySpecs
-- CurrentSpecs
+- [Garage](Core/Garage(Vehicles).md)
+- [FactorySpecs](Core/FactorySpecs.md)
 
 ## Maintenance
 
 - [MaintenanceRecord](Maintenance/MaintenanceRecord.md)
-- Reminder
-- FuelLog
+- [Reminder](Maintenance/Reminder.md)
+- [FuelLog](Maintenance/FuelLog.md)
 
 ## Media
 
-- Photo
-- Document
+- [Photo](Media/Photo.md)
+- [Document](Media/Document.md)
 
 ## Specifications
 
@@ -23,13 +23,13 @@
 - [Engine](powertrain/engine.md)
 - [Transmission](powertrain/transmission.md)
 - [Drivetrain](powertrain/drivetrain.md)
-- [Fluids](Fluids/fluids.md)
-- ServiceSchedule
+- [Fluids](Fluids/Fluids.md)
+- [ServiceSchedule](Specifications/ServiceSchedule.md)
 
 ## Parts
 
-- Part
+- [Part](Parts/Part.md)
 
 ## Vehicle Changes
 
-- Modification
+- [Modification](Modifications/Modification.md)
