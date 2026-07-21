@@ -4,17 +4,11 @@
 
 ## Purpose
 
-The Garage Screen is the primary hub of the application.
-
-Its responsibility is to display the user's vehicles and provide access to vehicle-related features.
-
-It presents information to the user but does not own, create, validate, or store vehicle data.
+The Garage Screen is the primary hub of the application. Its responsibility is to display the user's vehicles and provide access to vehicle-related features. It presents information to the user but does not own, create, validate, or store vehicle data.
 
 ---
 
 ## User Goals
-
-The user wants to:
 
 - View all vehicles in their garage.
 - Quickly identify a vehicle.
@@ -28,7 +22,7 @@ The user wants to:
 
 ## Responsibilities
 
-The Garage Screen is responsible for:
+This screen is responsible for:
 
 - Displaying the user's vehicles.
 - Displaying the currently selected vehicle.
@@ -42,56 +36,45 @@ The Garage Screen is responsible for:
 
 ## Does NOT Do
 
-The Garage Screen does NOT:
+This screen is NOT responsible for:
 
-- Store vehicles.
-- Create vehicle objects.
-- Validate vehicle information.
-- Save data to storage.
-- Modify factory specifications.
-- Manage maintenance records.
-
-Those responsibilities belong to the appropriate domain classes and services.
+- Storing vehicle objects.
+- Creating vehicle instances.
+- Validating vehicle information.
+- Saving data to storage.
+- Modifying factory specifications.
+- Managing maintenance records directly.
 
 ---
 
 ## Widgets
 
-- App Bar
+- App Bar with title and quick actions
 - Vehicle list (cards or list rows)
-- Vehicle image or placeholder
-- Vehicle nickname / Year / Make / Model
-- Quick vehicle information (optional)
+- Vehicle image or fallback icon
+- Vehicle nickname / Year / Make / Model / Trim
 - Search bar
-- Filter controls
-- Sort menu
-- Add Vehicle button
-- Scan VIN button (future)
-- Import button (future)
+- Filter controls dialog
+- Sort menu dropdown
+- Add Vehicle Floating Action Button (FAB)
+- Scan VIN button
 - Empty state illustration and message
 
 ---
 
 ## User Actions
 
-The user can:
-
-- Open a vehicle.
+- Select a vehicle.
 - Add a vehicle.
 - Edit a vehicle.
 - Remove a vehicle.
 - Search vehicles.
-- Filter vehicles.
+- Filter vehicles by make/year.
 - Sort vehicles.
-- Pin favorite vehicles (future).
-- Select multiple vehicles (future).
-- Export vehicles (future).
 
 ---
 
 ## Commands
-
-The screen may invoke commands such as:
 
 - Garage.selectVehicle()
 - Garage.removeVehicle()
@@ -102,8 +85,6 @@ The screen may invoke commands such as:
 ---
 
 ## Queries
-
-The screen reads information from:
 
 - Garage.vehicles
 - Garage.selectedVehicle
@@ -118,35 +99,33 @@ The screen reads information from:
 - Garage
 - Vehicle
 
-### Navigation
+### Services
+
+- StorageService
+- SearchService
+
+### Navigation Targets
 
 - AddVehicleScreen
 - VehicleDetailsScreen
-
-### Future
-
-- SearchService
-- ImportService
-- ExportService
-- AnalyticsService
+- SettingsScreen
 
 ---
 
 ## Inputs
 
-- Garage
+- Garage object / vehicles stream
 
 ---
 
 ## Outputs
 
-- Selected Vehicle
+- Selected Vehicle context
 - Navigation events
-- User actions
 
 ---
 
-## Navigation
+## Navigation Flow
 
 Garage Screen
 
@@ -156,60 +135,53 @@ Garage Screen
 
 ---
 
-## Empty State
+## States
 
-When the garage contains no vehicles:
+### Loading
 
-Display a friendly message.
+Display progress indicator while loading garage data from storage.
 
-Example:
+### Empty
 
-> "No vehicles have been added yet."
+Display friendly empty illustration: "No vehicles added yet" with prominent Add Vehicle FAB.
 
-Provide a prominent **Add Vehicle** button.
+### Success
 
-Optionally provide a **Scan VIN** shortcut.
+Display list/grid of vehicle cards with active vehicle highlighted.
+
+### Error
+
+Display error banner with retry option if storage read fails.
+
+---
+
+## Validation
+
+- Vehicle selection must be valid index within range.
+- Deletion requires user confirmation prompt.
 
 ---
 
 ## Acceptance Criteria
 
-The Garage Screen is complete when:
-
-- Vehicles are displayed correctly.
-- Selecting a vehicle opens its details.
-- Add Vehicle navigation works.
-- Edit Vehicle navigation works.
-- Remove Vehicle works correctly.
-- Search returns expected results.
-- Filters update the displayed list.
-- Sorting works correctly.
+- Vehicles are displayed correctly in list/grid format.
+- Selecting a vehicle opens its details page.
+- Add Vehicle and Edit Vehicle navigation buttons function correctly.
+- Remove Vehicle removes item and updates selected state.
+- Search and filters correctly filter vehicle list.
 - Empty state appears when no vehicles exist.
-- Performance remains smooth with large garages.
 
 ---
 
 ## Future Enhancements
 
-- Grid view
-- Compact view
-- Recently viewed vehicles
-- Favorite vehicles
-- Garage statistics
-- Smart maintenance reminders
-- Quick service status badges
-- Cloud synchronization indicators
-- Multiple garages
+- Grid view toggle
+- Favorite vehicles pinning
+- Multi-garage support
 - Drag-and-drop vehicle ordering
 
 ---
 
 ## Notes
 
-The Garage Screen is a presentation layer.
-
-Business logic belongs in the domain classes (Garage, Vehicle, etc.).
-
-Persistence belongs in repositories and the database layer.
-
-The screen's job is to display information and respond to user interaction.
+The Garage Screen is a presentation layer. Business logic belongs in domain classes (`Garage`, `Vehicle`).

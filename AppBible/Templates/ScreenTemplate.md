@@ -99,7 +99,7 @@ Information this screen reads.
 - Service
 - Service
 
-### Navigation
+### Navigation Targets
 
 - Screen
 - Screen
@@ -127,7 +127,7 @@ Information produced by this screen.
 
 ---
 
-## Navigation
+## Navigation Flow
 
 Where the user can go from here.
 
@@ -140,8 +140,6 @@ Current Screen
 ---
 
 ## States
-
-Possible UI states.
 
 ### Loading
 
